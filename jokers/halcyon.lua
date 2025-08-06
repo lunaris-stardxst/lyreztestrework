@@ -13,8 +13,8 @@ SMODS.Joker{ --Halcyon Sentipydes
     loc_txt = {
         ['name'] = 'Halcyon Sentipydes',
         ['text'] = {
-            [1] = 'Retrigger {C:orange}first{} played card used', 
-            [2] = 'in scoring {C:orange}#1#{} additional times'
+            [1] = 'Retrigger {C:attention}first{} played card used', 
+            [2] = 'in scoring {C:attention}#1#{} additional times'
         }
     },
     pos = {
