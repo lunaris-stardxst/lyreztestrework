@@ -5,6 +5,13 @@ SMODS.Atlas({
     py = 95,
 })
 
+SMODS.Atlas {
+    key = "modicon",
+    path = "modicon.png",
+    px = 32,
+    py = 32,
+}
+
 -- register our sound, reference string will become 'mktjk_customsound'
 SMODS.Sound({
     key = "dttg", 
