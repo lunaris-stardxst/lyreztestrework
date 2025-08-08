@@ -31,6 +31,9 @@ SMODS.Joker{ --Rentarou Aijou
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    in_pool = function (self, args)
+        return false
+    end,
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then

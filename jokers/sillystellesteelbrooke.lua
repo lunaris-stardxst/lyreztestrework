@@ -16,7 +16,7 @@ SMODS.Joker{ --Silly Stelle Steelbrooke
         ['text'] = {
             [1] = 'This Joker gains {X:red,C:white}X#2#{} Mult per',
             [2] = '{C:attention}consecutive{} card played',
-            [3] = '{C:inactive}(Currently {X:red,C:white}#1#{} Mult){}'
+            [3] = '{C:inactive}(Currently {X:red,C:white}X#1#{} {C:inactive}Mult){}'
         }
     },
     pos = {
