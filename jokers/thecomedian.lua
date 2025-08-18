@@ -9,9 +9,9 @@ SMODS.Joker{ --The Comedian
     loc_txt = {
         ['name'] = 'The Comedian',
         ['text'] = {
-            [1] = '{X:red,C:white}X10{} Mult',
-            [2] = '{C:green}#1# in 10000{} chance this card is',
-            [3] = 'destroyed at the end of round'
+            '{X:red,C:white}X10{} Mult',
+            '{C:green}#1# in 10000{} chance this card is',
+            'destroyed at the end of round'
         }
     },
     pos = {

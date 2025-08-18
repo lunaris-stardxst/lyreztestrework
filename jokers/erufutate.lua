@@ -8,7 +8,7 @@ SMODS.Joker{ --Eru Futate
     loc_txt = {
         ['name'] = 'Eru Futate',
         ['text'] = {
-            [1] = '{X:red,C:white}X22{} Mult if played hand contains a {C:orange}Pair{}'
+            '{X:red,C:white}X22{} Mult if played hand contains a {C:orange}Pair{}'
         }
     },
     pos = {

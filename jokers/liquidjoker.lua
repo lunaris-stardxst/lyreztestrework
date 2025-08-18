@@ -7,7 +7,7 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
     loc_txt = {
         ['name'] = 'Liquid Joker',
         ['text'] = {
-            [1] = 'Turns all played cards into {C:attention}Glass{}'
+            'Turns all played cards into {C:attention}Glass{}'
         }
     },
     pos = {

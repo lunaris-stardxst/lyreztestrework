@@ -7,7 +7,7 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     loc_txt = {
         ['name'] = 'Rin Penrose And The Balatro Polycule',
         ['text'] = {
-            [1] = 'Adds {C:attention}5 Joker slots{}'
+            'Adds {C:attention}5 Joker slots{}'
         }
     },
     pos = {

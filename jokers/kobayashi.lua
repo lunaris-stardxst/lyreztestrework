@@ -8,7 +8,7 @@ SMODS.Joker{ --Miss Kobayashi:
     loc_txt = {
         ['name'] = 'Miss Kobayashi',
         ['text'] = {
-            [1] = 'All Joker cards in the shop are {C:attention}free{}'
+            'All Joker cards in the shop are {C:attention}free{}'
         }
     },
     pos = {

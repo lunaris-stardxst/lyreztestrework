@@ -13,8 +13,8 @@ SMODS.Joker{ --Mimukawa Nice Try
     loc_txt = {
         ['name'] = 'Mimukawa Nice Try',
         ['text'] = {
-            [1] = 'Adds {C:red}#1#{} Mult when 4',
-            [2] = 'cards are played.'
+            'Adds {C:red}#1#{} Mult when 4',
+            'cards are played.'
         }
     },
     pos = {

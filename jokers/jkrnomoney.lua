@@ -14,8 +14,8 @@ SMODS.Joker{ --jokerno$
     loc_txt = {
         ['name'] = 'jokerno$',
         ['text'] = {
-            [1] = '{C:red}+#1#{} Mult for every {C:money}$1{} you have',
-            [2] = '{C:inactive}(Currently +#2# Mult){}'
+            '{C:red}+#1#{} Mult for every {C:money}$1{} you have',
+            '{C:inactive}(Currently +#2# Mult){}'
         }
     },
     pos = {

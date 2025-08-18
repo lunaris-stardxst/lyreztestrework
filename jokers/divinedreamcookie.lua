@@ -13,11 +13,11 @@ SMODS.Joker{ --Divine Dream Cookie
     loc_txt = {
         ['name'] = 'Divine Dream Cookie',
         ['text'] = {
-            [1] = 'This Joker gains {X:red,C:white}X0.5{} Mult for',
-            [2] = 'every {C:orange}Queen{} discarded this round',
-            [3] = '{C:inactive}(Currently{} {X:red,C:white}x#1#{} {C:inactive}Mult){}',
-            [4] = '',
-            [5] = '{C:inactive,s:0.8}art by {X:edition,C:spades}HATTOYUME{}{}'
+            'This Joker gains {X:red,C:white}X0.5{} Mult for',
+            'every {C:orange}Queen{} discarded this round',
+            '{C:inactive}(Currently{} {X:red,C:white}x#1#{} {C:inactive}Mult){}',
+            '',
+            '{C:inactive,s:0.8}art by {X:edition,C:spades}HATTOYUME{}{}'
         }
     },
     pos = {

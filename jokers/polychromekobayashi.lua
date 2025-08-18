@@ -8,7 +8,7 @@ SMODS.Joker{ --Polychrome Kobayashi
     loc_txt = {
         ['name'] = 'True Kobayashi',
         ['text'] = {
-            [1] = '{C:planet}Everything {}in the shop is {C:attention}free{}'
+            '{C:planet}Everything {}in the shop is {C:attention}free{}'
         }
     },
     pos = {

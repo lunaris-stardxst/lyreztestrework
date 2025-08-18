@@ -8,6 +8,13 @@ return {
                     "{C:inactive,s:0.9}(ko-ha-ku)"
                 },
             },
+        mktjk_kamishirorui_name={
+                name="Joker Name",
+                text={
+                    "{s:1.5}Kamishiro Rui",
+                    "{C:inactive,s:0.9}(cah-me-she-roh rue-ee)"
+                },
+            },
         mktjk_aphextwin_garbage={
                 name="what the hell",
                 text={

@@ -16,11 +16,11 @@ SMODS.Joker{ --Oguri Cap
     loc_txt = {
         ['name'] = 'Oguri Cap',
         ['text'] = {
-            [1] = '{C:green}#1#/#2#{} chance for Oguri Cap',
-            [2] = 'to order {X:red,C:white}969{} 10pc bucket',
-            [3] = 'meals at KFC, worth #4#$, putting you',
-            [4] = 'into debt. Otherwise you',
-            [5] = 'earn {C:gold}#3#${} per round.'
+            '{C:green}#1#/#2#{} chance for Oguri Cap',
+            'to order {X:red,C:white}969{} 10pc bucket',
+            'meals at KFC, worth #4#$, putting you',
+            'into debt. Otherwise you',
+            'earn {C:gold}#3#${} per round.'
         }
     },
     pos = {

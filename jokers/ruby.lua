@@ -13,8 +13,8 @@ SMODS.Joker{ --ruby
     loc_txt = {
         ['name'] = 'ruby',
         ['text'] = {
-            [1] = 'the person who made entropy',
-            [2] = '{X:red,C:white}x#1#{} Mult'
+            'the person who made entropy',
+            '{X:red,C:white}x#1#{} Mult'
         }
     },
     pos = {

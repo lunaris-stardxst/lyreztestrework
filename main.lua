@@ -1,5 +1,5 @@
 SMODS.Atlas({
-    key = "CustomJokers",
+    key = "CustomJokers", -- dont change this until you figure out how to change it without breaking everything
     path = "atlas.png",
     px = 71,
     py = 95,
@@ -12,7 +12,18 @@ SMODS.Atlas {
     py = 32,
 }
 
+-- uncomment this when you finally figure out how to make partners
+
+-- SMODS.Atlas {
+    -- key = "partners",
+    -- path = "mktpartners.png",
+    --px = 32,
+    -- py = 32,
+-- }
+
+-- this is where i register the rest of the sounds
 -- register our sound, reference string will become 'mktjk_customsound'
+
 SMODS.Sound({
     key = "dttg", 
     path = "dttg.ogg"
@@ -30,8 +41,66 @@ SMODS.Sound({
 
 SMODS.Sound({
     key = "grievedih", 
-    path = "grievedih.ogg"
+    path = "grievedih.ogg",
+    pitch = 1.4
 })
+
+SMODS.Sound({
+    key = "ruisilly", 
+    path = "rui_silly.ogg",
+})
+
+-- this is for setting the music for the aime joker
+
+SMODS.Sound({
+    key = "music_aimeboss", 
+    path = "aime_boss.ogg",
+    select_music_track = function()
+        return not (G.booster_pack_sparkles and not G.booster_pack_sparkles.REMOVED) and
+            not (G.booster_pack_meteors and not G.booster_pack_meteors.REMOVED) and
+            not (G.booster_pack and not G.booster_pack.REMOVED and not disable_booster_music) and
+            not (G.shop and not G.shop.REMOVED) and
+            G.GAME.blind and G.GAME.blind.boss and next(SMODS.find_card("j_mktjk_aimecard")) and 100 or nil
+    end
+})
+
+SMODS.Sound({
+    key = "music_aimemain", 
+    path = "aime_main.ogg",
+    select_music_track = function()
+        return not (G.booster_pack_sparkles and not G.booster_pack_sparkles.REMOVED) and
+            not (G.booster_pack_meteors and not G.booster_pack_meteors.REMOVED) and
+            not (G.booster_pack and not G.booster_pack.REMOVED and not disable_booster_music) and
+            not (G.shop and not G.shop.REMOVED) and
+            G.GAME.blind and not G.GAME.blind.boss 
+            and next(SMODS.find_card("j_mktjk_aimecard")) and 100 or nil
+    end
+})
+
+SMODS.Sound({
+    key = "music_aimeshop",
+    path = "aime_shop.ogg",
+    select_music_track = function()
+        return not (G.booster_pack_sparkles and not G.booster_pack_sparkles.REMOVED) and
+            not (G.booster_pack_meteors and not G.booster_pack_meteors.REMOVED) and
+            not (G.booster_pack and not G.booster_pack.REMOVED and not disable_booster_music) and
+            (G.shop) and (G.STATE == G.STATES.SHOP)
+            and next(SMODS.find_card("j_mktjk_aimecard")) and 100 or nil
+    end
+})
+
+--SMODS.Sound({
+--    key = "music_aimebooster",
+--    path = "aime_boosters.ogg",
+--    select_music_track = function()
+--        return (G.booster_pack_sparkles and not G.booster_pack_sparkles.REMOVED) or 
+--        (G.booster_pack_meteors and not G.booster_pack_meteors.REMOVED) or 
+--       (G.booster_pack and not G.booster_pack.REMOVED and not disable_booster_music)
+--        and next(SMODS.find_card("j_mktjk_aimecard")) and 100 or nil
+--    end
+-- })
+
+-- this one is specifically for rentarou
 
 SMODS.Sound({
     key = "music_daisuki", 
@@ -41,7 +110,8 @@ SMODS.Sound({
             not (G.booster_pack_meteors and not G.booster_pack_meteors.REMOVED) and
             not (G.booster_pack and not G.booster_pack.REMOVED and not disable_booster_music) and
             not (G.shop and not G.shop.REMOVED) and
-            G.GAME.blind and G.GAME.blind.boss and next(SMODS.find_card("j_mktjk_rentarouaijou")) and 100 or nil
+            G.GAME.blind and G.GAME.blind.boss 
+            and next(SMODS.find_card("j_mktjk_rentarouaijou")) and 100 or nil 
     end
 })
 
@@ -62,6 +132,8 @@ local function load_jokers_folder()
 end
 
 load_jokers_folder()
+
+-- i dont know why this is in main.lua but it doesnt work any other way
 
 local cardclickref = Card.click
 function Card:click()
