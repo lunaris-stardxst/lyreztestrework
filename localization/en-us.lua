@@ -15,6 +15,27 @@ return {
                     "{C:inactive,s:0.9}(cah-me-she-roh rue-ee)"
                 },
             },
+        mktjk_haruurara_name={
+                name="Joker Name",
+                text={
+                    "{s:1.5}Haru Urara",
+                    "{C:inactive,s:0.9}(ha-roo oo-rah-rah)"
+                },
+            },
+        mktjk_erufutate_name={
+                name="Joker Name",
+                text={
+                    "{s:1.5}Futate Eru",
+                    "{C:inactive,s:0.9}(foo-tah-teh eh-roo)"
+                },
+            },
+        mktjk_rentarou_name={
+                name="Joker Name",
+                text={
+                    "{s:1.5}Aijō Rentarō",
+                    "{C:inactive,s:0.9}(eye-jo ren-tah-row)"
+                },
+            },
         mktjk_aphextwin_garbage={
                 name="what the hell",
                 text={

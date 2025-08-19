@@ -5,13 +5,15 @@ SMODS.Joker{ --Rentarou Aijou
             Xmult = 100
         }
     },
-    loc_vars = function(self, info_queue, card)
+    loc_vars = function(self, queue, card)
+        queue[#queue+1] = {key = 'mktjk_rentarou_name', set = 'Other'}
         return { 
             vars = { card.ability.extra.Xmult } 
         }
     end,
+    
     loc_txt = {
-        ['name'] = 'Rentarou Aijou',
+        ['name'] = '{f:5}愛城 恋太郎',
         ['text'] = {
             'Gives XMult equal to the amount',
             'of soulmates Rentarou has',

@@ -9,8 +9,8 @@ SMODS.Joker{ --MiLKY-P
         ['text'] = {
             'Applies a random',
             'Effect, {C:dark_edition}Edition{} and Seal',
-            'to a card when played.',
-            'Adds {C:attention}+1{} Joker slot.',
+            'to a card when scored.',
+            'Adds {C:attention}+3{} Joker slots.',
             '',
             '{C:inactive}The self-insert of all time.{}'
         },
@@ -47,7 +47,7 @@ SMODS.Joker{ --MiLKY-P
                 local enhancement_pool = {}
                 for _, enhancement in pairs(G.P_CENTER_POOLS.Enhanced) do
                     if enhancement.key ~= 'm_stone' then
-                        enhancement_pool[#enhancement_pool + 1] = enhancement
+                        enhancement_pool[#enhancement_pool + 3] = enhancement
                     end
                 end
                 local random_enhancement = pseudorandom_element(enhancement_pool, 'edit_card_enhancement')

@@ -6,11 +6,14 @@ SMODS.Joker{ --Eru Futate
         }
     },
     loc_txt = {
-        ['name'] = 'Eru Futate',
+        ['name'] = '{f:5}双天 彗流',
         ['text'] = {
             '{X:red,C:white}X22{} Mult if played hand contains a {C:orange}Pair{}'
         }
     },
+    loc_vars = function (self, queue, card)
+        queue[#queue+1] = {key = 'mktjk_erufutate_name', set = 'Other'}
+    end,
     pos = {
         x = 1,
         y = 0

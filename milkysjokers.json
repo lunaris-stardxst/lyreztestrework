@@ -1,17 +1,18 @@
 {
   "id": "milkysjokers",
-  "name": "Milky's Jokers",
+  "name": "Milky's Bullshit",
   "author": [
     "MiLKY-P"
   ],
   "description": "real fucked up jokers. absolutely. code by me, aiko, ruby, and ali",
   "prefix": "mktjk",
   "main_file": "main.lua",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "priority": 0,
   "badge_colour": "78f578",
   "badge_text_colour": "29ba5e",
   "dependencies": [
-    "Steamodded (>=1.0.0~BETA-0404a)"
+    "Steamodded (>=1.0.0~BETA-0404a)",
+    "Talisman (>=2.2.0a)"
   ]
 }
