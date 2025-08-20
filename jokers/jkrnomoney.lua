@@ -29,7 +29,7 @@ SMODS.Joker{ --jokerno$
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context)
         if context.joker_main then

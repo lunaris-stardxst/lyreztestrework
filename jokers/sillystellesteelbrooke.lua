@@ -30,7 +30,7 @@ SMODS.Joker{ --Silly Stelle Steelbrooke
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then

@@ -31,7 +31,7 @@ SMODS.Joker{ --Divine Dream Cookie
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context)
         if context.discard  then

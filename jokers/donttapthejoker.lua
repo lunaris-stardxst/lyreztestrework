@@ -30,7 +30,7 @@ SMODS.Joker{ --Dont Tap The Joker
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context)
         -- apply mult

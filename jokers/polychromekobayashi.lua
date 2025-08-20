@@ -22,7 +22,7 @@ SMODS.Joker{ --Polychrome Kobayashi
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     set_ability = function(self, card, initial)
         card:set_edition("e_polychrome", true)

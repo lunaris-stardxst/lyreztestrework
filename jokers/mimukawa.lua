@@ -28,7 +28,7 @@ SMODS.Joker{ --Mimukawa Nice Try
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then

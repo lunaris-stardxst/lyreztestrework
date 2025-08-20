@@ -1,6 +1,13 @@
 SMODS.Atlas({
-    key = "CustomJokers", -- dont change this until you figure out how to change it without breaking everything
-    path = "atlas.png",
+    key = "jokers",
+    path = "jokers_atlas.png",
+    px = 71,
+    py = 95,
+})
+
+SMODS.Atlas({
+    key = "vouchers", -- dont change this until you figure out how to change it without breaking everything
+    path = "vouchers_atlas.png",
     px = 71,
     py = 95,
 })
@@ -131,7 +138,20 @@ local function load_jokers_folder()
     end
 end
 
+local function load_vouchers_folder()
+    local mod_path = SMODS.current_mod.path
+    local vouchers_path = mod_path .. "/vouchers"
+    local files = NFS.getDirectoryItemsInfo(vouchers_path)
+    for i = 1, #files do
+        local file_name = files[i].name
+        if file_name:sub(-4) == ".lua" then
+            assert(SMODS.load_file("vouchers/" .. file_name))()
+        end
+    end
+end
+
 load_jokers_folder()
+load_vouchers_folder()
 
 -- i dont know why this is in main.lua but it doesnt work any other way
 

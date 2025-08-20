@@ -25,7 +25,7 @@ SMODS.Joker{ --The Comedian
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
     in_pool = function() return G.GAME.pool_flags.cavendish_extinct end,
 
     loc_vars = function(self, info_queue, card)

@@ -34,7 +34,7 @@ SMODS.Joker{ --Oguri Cap
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context)
         if context.end_of_round and not context.game_over and context.main_eval then

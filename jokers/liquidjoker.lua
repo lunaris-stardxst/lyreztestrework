@@ -21,7 +21,7 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context) --card is this joker and context holds information about whats going on right now
     if context.before and not context.blueprint and not context.repetition then --prevent animations from being repeated when it does nothing

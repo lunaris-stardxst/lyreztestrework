@@ -38,7 +38,7 @@ SMODS.Joker{ --Mr. Morale and the Big Steppers
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     calculate = function(self, card, context)
         if context.discard then

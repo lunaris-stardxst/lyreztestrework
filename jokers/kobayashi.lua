@@ -22,7 +22,7 @@ SMODS.Joker{ --Miss Kobayashi:
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     add_to_deck = function(self, card, from_debuff)
         G.E_MANAGER:add_event(Event({

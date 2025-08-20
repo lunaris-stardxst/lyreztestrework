@@ -27,7 +27,7 @@ SMODS.Joker{ --Aime Card
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
 -- this is a temporary effect. i will replace this once i figure out how to implement it
 

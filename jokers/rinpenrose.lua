@@ -21,7 +21,7 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
     add_to_deck = function(self, card, from_debuff)
         G.jokers.config.card_limit = G.jokers.config.card_limit + 5

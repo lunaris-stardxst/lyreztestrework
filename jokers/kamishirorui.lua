@@ -27,7 +27,7 @@ SMODS.Joker{ --神代 類
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'jokers',
 
 -- note to self. find a way to make the ruis stop mitosing. 
 -- it works for now but this will eventually crash the game.
