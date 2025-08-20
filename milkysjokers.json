@@ -12,7 +12,7 @@
   "badge_colour": "78f578",
   "badge_text_colour": "29ba5e",
   "dependencies": [
-    "Steamodded (>=1.0.0~BETA-0404a)",
+    "Steamodded (>=1.0.0~BETA-0711a)",
     "Talisman (>=2.2.0a)"
   ]
 }
