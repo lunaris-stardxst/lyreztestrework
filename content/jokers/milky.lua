@@ -2,6 +2,7 @@ SMODS.Joker{ --MiLKY-P
     key = "milky",
     config = {
         extra = {
+            other_dt = 0
         }
     },
     loc_txt = {
@@ -20,9 +21,9 @@ SMODS.Joker{ --MiLKY-P
     },
     pos = {
         x = 1,
-        y = 2
+        y = 2,
     },
-    soul_pos = {x = 2, y = 2, draw=function (card, scale_mod, rotate_mod)
+    soul_pos = {x = 0, y = 3, draw=function (card, scale_mod, rotate_mod)
         if card.children.floating_sprite then
             card.children.floating_sprite.T.w = 1.4
             rotate_mod = -G.TIMERS.REAL * 0.635
@@ -40,7 +41,7 @@ SMODS.Joker{ --MiLKY-P
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'jokers',
+    atlas = 'selfinsert',
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
