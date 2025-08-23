@@ -15,7 +15,7 @@ SMODS.Joker{ --Corobo
         }
     },
     loc_txt = {
-        ['name'] = 'Corobo',
+        ['name'] = "Corobo's Co-primes!",
         ['text'] = {
             [1] = 'Balances {C:blue}Chips{} and {C:red}Mult{} if',
             [2] = '{C:blue}Chips{} and {C:red}Mult{} are {C:attention}coprimes{}.'

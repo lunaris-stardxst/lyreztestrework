@@ -33,7 +33,7 @@ SMODS.Atlas {
     py = 32,
 }
 
--- this one is just for my fucken selfinsert
+-- this one is just for my fucken animated stuff
 
 SMODS.Atlas {
     key = "selfinsert",
@@ -42,9 +42,19 @@ SMODS.Atlas {
     py = 95,
 }
 
+SMODS.Atlas {
+    key = "mcparkour",
+    path = "mcparkour_atlas.png",
+    px = 71,
+    py = 95,
+}
+
+-- here's the animation code below. thank you benis
+
 local upd = Game.update
 local dt_table = {
-    {"j_mktjk_milky",0.06,11,2}
+    {"j_mktjk_milky",0.06,11,2},
+    {"j_mktjk_mcparkour",0.06,19,4},
 }
 
 --[[To use this:
@@ -164,6 +174,16 @@ SMODS.Sound({
 SMODS.Sound({
     key = "ruisilly", 
     path = "rui_silly.ogg",
+})
+
+SMODS.Sound({
+    key = "wonderplush", 
+    path = "wonderhoy.ogg",
+})
+
+SMODS.Sound({
+    key = "mreow", 
+    path = "meowstro.ogg",
 })
 
 -- this is for setting the music for the aime joker
