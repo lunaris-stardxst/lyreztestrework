@@ -14,7 +14,7 @@ SMODS.Enhancement {
     },
     atlas = 'editions',
     any_suit = true,
-    replace_base_card = true,
+    replace_base_card = false,
     no_rank = false,
     no_suit = false,
     always_scores = false,

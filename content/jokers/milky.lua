@@ -57,10 +57,14 @@ SMODS.Joker{ --MiLKY-P
                 if random_seal then
                     context.other_card:set_seal(random_seal, true)
                 end
-                local random_edition = poll_edition('edit_card_edition', nil, true, true)
-                if random_edition then
-                    context.other_card:set_edition(random_edition, true)
+                local options = {}
+                for _, edition_info in ipairs(G.P_CENTER_POOLS.Edition) do
+                    if edition_info.key ~= "e_negative" then
+                        options[#options+1] = {name = edition_info.key, weight = 1}
+                    end
                 end
+                local random_edition = poll_edition("key", nil, true, true, options)
+                context.other_card:set_edition(random_edition, true)
                 return {
                     message = "Card Modified!"
                 }

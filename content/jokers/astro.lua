@@ -47,6 +47,7 @@ SMODS.Joker{ --Astro
                 return {
                     message = "mrrrreow!!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                     extra = {
                         e_chips = card.ability.extra.echips,
                         colour = G.C.DARK_EDITION
@@ -57,6 +58,7 @@ SMODS.Joker{ --Astro
                     chips = card.ability.extra.chipsadd,
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
             end
         end
@@ -64,12 +66,13 @@ SMODS.Joker{ --Astro
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.end_of_round and context.game_over == false and context.main_eval  then
                 return {
                     message = "mreow!",
-                    sound = 'mktjk_mreow',
+                    sound = play_sound('mktjk_mreow', 1.0, 1.0),
                     extra = {
                         func = function()
                     card.ability.extra.chipsadd = (card.ability.extra.chipsadd) + 1
@@ -83,72 +86,84 @@ SMODS.Joker{ --Astro
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.reroll_shop  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.other_joker  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.skip_blind  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.hand_drawn  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.discard  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.open_booster  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.skipping_booster  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.playing_card_added  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.using_consumeable  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.end_of_round and context.main_eval and G.GAME.blind.boss  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
         if context.ending_shop  then
                 return {
                     message = "mreow!",
                     sound = 'mktjk_mreow',
+                    pitch = 1.0,
                 }
         end
     end

@@ -36,6 +36,13 @@ return {
                     "{C:inactive,s:0.9}(eye-jo ren-tah-row)"
                 },
             },
+        mktjk_kusuri_name={
+                name="Joker Name",
+                text={
+                    "{s:1.5}Yakuzen Kusuri",
+                    "{C:inactive,s:0.9}(yah-ku-zen ku-soo-re)"
+                },
+            },
         mktjk_aphextwin_garbage={
                 name="what the hell",
                 text={

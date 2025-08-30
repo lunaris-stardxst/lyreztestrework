@@ -184,6 +184,7 @@ SMODS.Sound({
 SMODS.Sound({
     key = "mreow", 
     path = "meowstro.ogg",
+    pitch = 1.0
 })
 
 -- this is for setting the music for the aime joker
