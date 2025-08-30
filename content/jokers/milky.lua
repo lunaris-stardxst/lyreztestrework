@@ -48,7 +48,7 @@ SMODS.Joker{ --MiLKY-P
                 local enhancement_pool = {}
                 for _, enhancement in pairs(G.P_CENTER_POOLS.Enhanced) do
                     if enhancement.key ~= 'm_stone' then
-                        enhancement_pool[#enhancement_pool + 3] = enhancement
+                        enhancement_pool[#enhancement_pool + 1] = enhancement
                     end
                 end
                 local random_enhancement = pseudorandom_element(enhancement_pool, 'edit_card_enhancement')
