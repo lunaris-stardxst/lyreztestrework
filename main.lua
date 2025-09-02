@@ -182,6 +182,11 @@ SMODS.Sound({
 })
 
 SMODS.Sound({
+    key = "worldfuturestar", 
+    path = "worldfuturestar.ogg",
+})
+
+SMODS.Sound({
     key = "mreow", 
     path = "meowstro.ogg",
     pitch = 1.0
@@ -336,6 +341,8 @@ load_decks_folder()
 load_seals_folder()
 load_blinds_folder()
 load_editions_folder()
+
+assert(SMODS.load_file("titlescreen.lua"))()
 
 -- i dont know why this is in main.lua but it doesnt work any other way
 

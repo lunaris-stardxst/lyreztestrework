@@ -15,6 +15,13 @@ return {
                     "{C:inactive,s:0.9}(cah-me-she-roh rue-ee)"
                 },
             },
+        mktjk_tsukasatenma_name={
+                name="Joker Name",
+                text={
+                    "{s:1.5}Tsukasa Tenma",
+                    "{C:inactive,s:0.9}(tsu-cah-sa ten-mah)"
+                },
+            },
         mktjk_haruurara_name={
                 name="Joker Name",
                 text={

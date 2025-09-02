@@ -72,10 +72,10 @@ SMODS.Joker{ --MiLKY-P
     end,
 
     add_to_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit + 1
+        G.jokers.config.card_limit = G.jokers.config.card_limit + 3
     end,
 
     remove_from_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit - 1
+        G.jokers.config.card_limit = G.jokers.config.card_limit - 3
     end
 }
