@@ -8,7 +8,7 @@ SMODS.Joker{ --Iris the Bnuuy!
     loc_txt = {
         ['name'] = 'Iris the Bnuuy!',
         ['text'] = {
-            [1] = 'Creates a random {C:tarot}Tarot{} Card',
+            [1] = 'Creates a random {C:spectral}Spectral{} Card',
             [2] = 'after defeating {C:attention}Boss Blind{}'
         },
         ['unlock'] = {
@@ -37,7 +37,7 @@ SMODS.Joker{ --Iris the Bnuuy!
                     G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
                     G.E_MANAGER:add_event(Event({
                         func = function()
-                            SMODS.add_card{set = 'Tarot'}
+                            SMODS.add_card{set = 'Spectral'}
                             G.GAME.consumeable_buffer = 0
                             return true
                         end
