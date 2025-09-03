@@ -11,7 +11,7 @@ SMODS.Joker{ --{f:5}天馬 司
         ['text'] = {
             [1] = 'If {C:attention}2{} or more Kings are played',
             [2] = 'create a Perishable {C:edition}Negative{} copy',
-            [3] = 'of a {C:attention}random{} Joker'
+            [3] = 'of the {C:attention}rightmost{} Joker'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -45,17 +45,13 @@ SMODS.Joker{ --{f:5}天馬 司
     
     return rankCount >= 2
 end)() then
-                local available_jokers = {}
-                for i, joker in ipairs(G.jokers.cards) do
-                    table.insert(available_jokers, joker)
-                end
-                local target_joker = #available_jokers > 0 and pseudorandom_element(available_jokers, pseudoseed('copy_joker')) or nil
+                local target_joker = (#G.jokers.cards > 0 and G.jokers.cards[#G.jokers.cards]) or nil
                 
                 if target_joker then
                     G.E_MANAGER:add_event(Event({
                         func = function()
-                            local copied_joker = copy_card(target_joker, nil, nil, nil, target_joker.edition and target_joker.edition.negative)
-                        copied_joker:set_edition("e_negative", true)
+                            local copied_joker = copy_card(target_joker, nil, nil, nil, nil)
+                            copied_joker:set_edition("e_negative", true)
                             copied_joker:add_sticker('perishable', true)
                             copied_joker:add_to_deck()
                             G.jokers:emplace(copied_joker)
