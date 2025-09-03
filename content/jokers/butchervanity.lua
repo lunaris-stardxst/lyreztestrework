@@ -6,7 +6,6 @@ SMODS.Joker{ --Butcher Vanity
             inc = 1,
             numera = 1,
             denomina = 5,
-            odds = 1
         }
     },
     loc_txt = {
@@ -37,14 +36,14 @@ SMODS.Joker{ --Butcher Vanity
     atlas = 'jokers',
 
     loc_vars = function(self, info_queue, card)
-        local new_numerator, new_denominator = SMODS.get_probability_vars(card, numera, card.ability.extra.odds, 'j_mktjk_butchervanity') 
-        return {vars = {card.ability.extra.mult, card.ability.extra.inc, card.ability.extra.numera, card.ability.extra.denomina, new_numerator, new_denominator}}
+        local new_numerator, new_denominator = SMODS.get_probability_vars(card, card.ability.extra.numera, card.ability.extra.denomina, 'j_mktjk_butchervanity') 
+        return {vars = {card.ability.extra.mult, card.ability.extra.inc, new_numerator, new_denominator}}
     end,
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if #G.consumeables.cards >= 1 then
-                if SMODS.pseudorandom_probability(card, 'group_0_9e342b2a', 1, card.ability.extra.odds, 'j_mktjk_butchervanity', false) then
+                if SMODS.pseudorandom_probability(card, 'group_0_9e342b2a', card.ability.extra.numera, card.ability.extra.denomina, 'j_mktjk_butchervanity', false) then
               local target_cards = {}
             for i, consumable in ipairs(G.consumeables.cards) do
                 table.insert(target_cards, consumable)
