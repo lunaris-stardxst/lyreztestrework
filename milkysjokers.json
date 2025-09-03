@@ -1,13 +1,16 @@
 {
-  "id": "milkysjokers",
+  "id": "milkysbullshit",
   "name": "Milky's Bullshit",
   "author": [
-    "MiLKY-P"
+    "MiLKY-P",
+    "metanite",
+    "ThunderEdge",
+    "and more"
   ],
-  "description": "real fucked up additions. absolutely.[s]visit https://milkyway.moe",
+  "description": "real fucked up additions. special thanks to meta, thunderedge, and the balatro modding community <3. visit https://milkyway.moe",
   "prefix": "mktjk",
   "main_file": "main.lua",
-  "version": "1.0.5_b1",
+  "version": "1.0.5_b2",
   "priority": 69420,
   "badge_colour": "78f578",
   "badge_text_colour": "29ba5e",
