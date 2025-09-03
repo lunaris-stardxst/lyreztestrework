@@ -7,7 +7,7 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     loc_txt = {
         ['name'] = 'Rin Penrose And The Balatro Polycule',
         ['text'] = {
-            'Adds {C:attention}5 Joker slots{}'
+            'Adds {C:attention}3 Joker slots{}'
         }
     },
     pos = {
@@ -24,10 +24,10 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     atlas = 'jokers',
 
     add_to_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit + 5
+        G.jokers.config.card_limit = G.jokers.config.card_limit + 3
     end,
 
     remove_from_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit - 5
+        G.jokers.config.card_limit = G.jokers.config.card_limit - 3
     end
 }

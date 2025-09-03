@@ -29,7 +29,7 @@ SMODS.Joker{ --Corobo
         y = 2
     },
     cost = 6,
-    rarity = 3,
+    rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

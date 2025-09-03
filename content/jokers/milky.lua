@@ -11,7 +11,6 @@ SMODS.Joker{ --MiLKY-P
             'Applies a random',
             'Effect, {C:dark_edition}Edition{} and Seal',
             'to a card when scored.',
-            'Adds {C:attention}+3{} Joker slots.',
             '',
             '{C:inactive}The self-insert of all time.{}'
         },
@@ -69,13 +68,5 @@ SMODS.Joker{ --MiLKY-P
                     message = "Card Modified!"
                 }
         end
-    end,
-
-    add_to_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit + 3
-    end,
-
-    remove_from_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit - 3
     end
 }

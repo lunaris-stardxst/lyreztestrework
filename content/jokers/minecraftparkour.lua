@@ -3,14 +3,14 @@ SMODS.Joker{ --Minecraft Parkour
     config = {
         extra = {
             multvar = 2,
-            Xmult_min = 2,
+            Xmult_min = 1,
             Xmult_max = 4
         }
     },
     loc_txt = {
         ['name'] = 'Minecraft Parkour',
         ['text'] = {
-            [1] = 'This Joker gives {X:red,C:white}2-4x{} Mult'
+            [1] = 'This Joker gives {X:red,C:white}1-4x{} Mult'
         },
         ['unlock'] = {
             [1] = ''
@@ -21,7 +21,7 @@ SMODS.Joker{ --Minecraft Parkour
         y = 0
     },
     cost = 6,
-    rarity = 2,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

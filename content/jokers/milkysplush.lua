@@ -2,7 +2,7 @@ SMODS.Joker{ --Milkys Fuckass Plushie
     key = "milkysplush",
     config = {
         extra = {
-            Xmult = 2
+            Xmult = 3
         }
     },
     loc_txt = {
@@ -41,7 +41,7 @@ SMODS.Joker{ --Milkys Fuckass Plushie
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
-            if (context.other_card:get_id() == 14 or context.other_card:get_id() == 11) then
+            if (context.other_card:get_id() == 14) then
                 return {
                     Xmult = card.ability.extra.Xmult,
                     message = "Wonderhoy!",

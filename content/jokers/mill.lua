@@ -25,7 +25,7 @@ SMODS.Joker{ --Mill the Romcom Angel
         y = 2
     },
     cost = 4,
-    rarity = 1,
+    rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

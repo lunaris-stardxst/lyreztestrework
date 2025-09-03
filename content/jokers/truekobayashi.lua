@@ -1,31 +1,50 @@
-SMODS.Joker{ --Polychrome Kobayashi
+SMODS.Joker{ --True Kobayashi
     key = "truekobayashi",
     config = {
         extra = {
-            discount_amount = 1
+            reroll_amount = 1
         }
     },
     loc_txt = {
         ['name'] = 'True Kobayashi',
         ['text'] = {
-            '{C:planet}Everything {}in the shop is {C:attention}free{}'
+            [1] = '{C:planet}Everything{} in the shop is {C:attention}free.{}',
+            [2] = 'Rerolls start at {C:money}$0{}'
+        },
+        ['unlock'] = {
+            [1] = 'Unlocked by default.'
         }
     },
     pos = {
         x = 9,
         y = 0
     },
-    cost = 28,
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
+    },
+    cost = 20,
     rarity = 4,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'jokers',
+    atlas = 'Joker',
+    in_pool = function(self, args)
+          return (
+          not args 
+          or args.source ~= 'sho' 
+          or args.source == 'buf' or args.source == 'jud' or args.source == 'rif' or args.source == 'rta' or args.source == 'sou' or args.source == 'uta' or args.source == 'wra'
+          )
+          and true
+      end,
 
     set_ability = function(self, card, initial)
         card:set_edition("e_polychrome", true)
+    end,
+
+    calculate = function(self, card, context)
     end,
 
     add_to_deck = function(self, card, from_debuff)
@@ -37,6 +56,7 @@ SMODS.Joker{ --Polychrome Kobayashi
         return true
     end
 }))
+        SMODS.change_free_rerolls(card.ability.extra.reroll_amount)
     end,
 
     remove_from_deck = function(self, card, from_debuff)
@@ -48,6 +68,7 @@ SMODS.Joker{ --Polychrome Kobayashi
         return true
     end
 }))
+        SMODS.change_free_rerolls(-(card.ability.extra.reroll_amount))
     end
 } 
       
@@ -55,8 +76,10 @@ local card_set_cost_ref = Card.set_cost
 function Card:set_cost()
     card_set_cost_ref(self)
     
-    if next(SMODS.find_card("j_mktjk_truekobayashi")) then
-        if (self.ability.set == 'Joker' or self.ability.set == 'Tarot' or self.ability.set == 'Planet' or self.ability.set == 'Spectral' or self.ability.set == 'Enhanced' or self.ability.set == 'Booster' or self.ability.set == 'Voucher') then self.cost = 0 end
+    if next(SMODS.find_card("j_modprefix_truekobayashi")) then
+        if (self.ability.set == 'Joker' or self.ability.set == 'Tarot' or self.ability.set == 'Planet' or self.ability.set == 'Spectral' or self.ability.set == 'Enhanced' or self.ability.set == 'Booster' or self.ability.set == 'Voucher') then
+            self.cost = 0
+        end
     end
     
     self.sell_cost = math.max(1, math.floor(self.cost / 2)) + (self.ability.extra_value or 0)

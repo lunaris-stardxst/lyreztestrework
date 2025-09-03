@@ -21,7 +21,7 @@ SMODS.Joker{ --TurboChip Card
         y = 3
     },
     cost = 13,
-    rarity = 4,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

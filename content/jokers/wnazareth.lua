@@ -22,7 +22,7 @@ SMODS.Joker{ --Waters Of Nazareth
         y = 1
     },
     cost = 6,
-    rarity = 2,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
