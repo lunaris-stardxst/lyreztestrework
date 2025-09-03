@@ -53,7 +53,9 @@ end)() then
                             local copied_joker = copy_card(target_joker, nil, nil, nil, nil)
                             copied_joker:set_edition("e_negative", true)
                             copied_joker:add_sticker('perishable', true)
+                            copied_joker:add_sticker('eternal', false)
                             copied_joker:add_to_deck()
+                            copied_joker.ability.eternal = false
                             G.jokers:emplace(copied_joker)
                             return true
                         end
