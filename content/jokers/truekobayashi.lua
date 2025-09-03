@@ -19,10 +19,6 @@ SMODS.Joker{ --True Kobayashi
         x = 9,
         y = 0
     },
-    display_size = {
-        w = 71 * 1, 
-        h = 95 * 1
-    },
     cost = 20,
     rarity = 4,
     blueprint_compat = true,
@@ -30,7 +26,7 @@ SMODS.Joker{ --True Kobayashi
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
+    atlas = 'jokers',
     in_pool = function(self, args)
           return (
           not args 

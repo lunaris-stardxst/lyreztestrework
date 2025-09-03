@@ -8,7 +8,7 @@ SMODS.Joker{ --Milkys Fuckass Plushie
     loc_txt = {
         ['name'] = 'Milkys Fuckass Plushie',
         ['text'] = {
-            [1] = 'Played Aces and Jacks each give {X:red,C:white}X#1#{} Mult when scored'
+            [1] = 'Played Aces give {X:red,C:white}X#1#{} Mult when scored'
         },
     },
     pos = {
