@@ -8,14 +8,14 @@ SMODS.Joker{ --jokerno$
     loc_vars = function(self, queue, card) return {
         vars = {
             card.ability.extra.money_mult,
-            card.ability.extra.money_mult*math.floor(G.GAME.dollars)
+            math.max(1, card.ability.extra.money_mult * math.floor(0 - G.GAME.dollars))
         }
     } end,
     loc_txt = {
         ['name'] = 'jokerno$',
         ['text'] = {
-            '{C:red}+#1#{} Mult for every {C:money}$1{} you have',
-            '{C:inactive}(Currently +#2# Mult){}'
+            '{X:mult,C:white}X#1#{} Mult for every {C:money}$1{} below 0 you have',
+            '{C:inactive}(Currently X#2# Mult){}'
         }
     },
     pos = {
@@ -31,9 +31,13 @@ SMODS.Joker{ --jokerno$
     discovered = true,
     atlas = 'jokers',
 
+    set_ability = function(self, card, initial, delay_sprites)
+      card:set_rental(true)
+    end,
+
     calculate = function(self, card, context)
         if context.joker_main then
-                return {xmult = card.ability.extra.money_mult * math.floor(G.GAME.dollars)}
+                return {xmult = math.max(1, card.ability.extra.money_mult * math.floor(0 - G.GAME.dollars))}
         end
     end
 }

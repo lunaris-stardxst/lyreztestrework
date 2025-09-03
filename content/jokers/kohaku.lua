@@ -2,7 +2,7 @@ SMODS.Joker{ --コハク
     key = "kohaku",
     config = {
         extra = {
-            multinum = 1.5
+            multinum = 0.25
         }
     },
     loc_vars = function(self, queue, card) 
@@ -18,7 +18,7 @@ SMODS.Joker{ --コハク
         return {
             vars = {
                 card.ability.extra.multinum,
-                math.max(card.ability.extra.multinum * count, 1) -- are you sure you want X0 Mult?
+                (card.ability.extra.multinum * count) + 1
             }
         } end,
     loc_txt = {
@@ -51,7 +51,7 @@ SMODS.Joker{ --コハク
                 end
             end
             return {
-                Xmult = math.max(card.ability.extra.multinum * count, 1) -- are you sure you want X0 Mult?
+                Xmult = (card.ability.extra.multinum * count) + 1
             }
         end
     end

@@ -2,19 +2,22 @@ SMODS.Joker{ --Shop Keeper Kagami
     key = "shopkeeperkagami",
     config = {
         extra = {
-            discount_amount = 50
+            discount_amount = 20
         }
     },
     loc_txt = {
         ['name'] = 'Shop Keeper Kagami',
         ['text'] = {
-            [1] = 'Gives a 50% discount',
+            [1] = 'Gives a #1#% discount',
             [2] = 'on every shop item.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
+    loc_vars = function(self, info_queue, card)
+        return { vars = { card.ability.extra.discount_amount } }
+    end,
     pos = {
         x = 3,
         y = 2
@@ -66,7 +69,8 @@ SMODS.Joker{ --Shop Keeper Kagami
 local card_set_cost_ref = Card.set_cost
 function Card:set_cost()
     card_set_cost_ref(self)
+    local skk = SMODS.find_card("j_mktjk_shopkeeperkagami")
 
-    if next(SMODS.find_card("j_mktjk_shopkeeperkagami")) then
-        self.cost = math.max(0, math.floor(self.cost * (1 - 50 / 100))) end
+    if next(skk) then
+        self.cost = math.max(0, math.floor(self.cost * (1 - skk[1].ability.extra.discount_amount / 100))) end
     end
