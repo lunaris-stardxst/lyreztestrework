@@ -335,12 +335,25 @@ local function load_editions_folder()
     end
 end
 
+local function load_crossmod_folder()
+    local mod_path = SMODS.current_mod.path
+    local vouchers_path = mod_path .. "/crossmod"
+    local files = NFS.getDirectoryItemsInfo(vouchers_path)
+    for i = 1, #files do
+        local file_name = files[i].name
+        if file_name:sub(-4) == ".lua" then
+            assert(SMODS.load_file("crossmod/" .. file_name))()
+        end
+    end
+end
+
 load_jokers_folder()
 load_vouchers_folder()
 load_decks_folder()
 load_seals_folder()
 load_blinds_folder()
 load_editions_folder()
+load_crossmod_folder()
 
 assert(SMODS.load_file("titlescreen.lua"))()
 
