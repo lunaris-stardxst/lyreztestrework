@@ -7,13 +7,13 @@ SMODS.Back{
     loc_txt = {
         name ="Ruikasa Deck",
         text={
-            "Start with an Eternal", 
-            "Negative {f:5}天馬 司{} and",
-			"an Eternal Negative {f:5}神代 類{}"
+            "Start with an {V:1}Eternal", 
+            "{C:dark_edition,T:e_negative}Negative{} {C:attention,T:j_mktjk_kamishirorui,f:5}天馬 司{} and",
+			"an {V:1}Eternal {C:dark_edition,T:e_negative}Negative{} {C:attention,T:j_mktjk_tsukasatenma,f:5}神代 類{}"
         }
 	},
 	loc_vars = function(self,info_queue,card)
-		return {vars = {self.config.extra.winning_ante}}
+		return {vars = {self.config.extra.winning_ante, colours = {{0.78, 0.35, 0.52, 1}}}}
 	end,
     apply = function(self, back)
 		G.E_MANAGER:add_event(Event({

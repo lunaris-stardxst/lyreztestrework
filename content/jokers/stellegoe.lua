@@ -8,7 +8,7 @@ SMODS.Joker{ --stellegoe :3
     loc_txt = {
         ['name'] = 'stellegoe :3',
         ['text'] = {
-            [1] = '{C:blue}+#1#{} Chips'
+            [1] = '{C:chips}+#1#{} Chips'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

@@ -9,10 +9,10 @@ SMODS.Joker{ --Silly Stelle Steelbrooke
     loc_txt = {
         ['name'] = 'Silly Stelle Steelbrooke',
         ['text'] = {
-            [1] = 'This Joker gains {X:red,C:white}X#2#{} Mult per',
+            [1] = 'This Joker gains {C:white,X:mult}X#2#{} Mult per',
             [2] = '{C:attention}consecutive{} card played',
-            [3] = '{C:inactive}(Resets at end of round){}',
-            [4] = '{C:inactive}(Currently {X:red,C:white}X#1#{} {C:inactive}Mult){}'
+            [3] = '{C:inactive}(Resets at end of round)',
+            [4] = '{C:inactive}(Currently {C:white,X:mult}X#1# {C:inactive}Mult)'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

@@ -13,8 +13,8 @@ SMODS.Joker{ --Mimukawa Nice Try
     loc_txt = {
         ['name'] = 'Mimukawa Nice Try',
         ['text'] = {
-            'Adds {C:red}#1#{} Mult when 4',
-            'cards are played.'
+            '{C:mult}+#1#{} Mult if played hand',
+            'has exactly {C:attention}4{} cards',
         }
     },
     pos = {
@@ -32,7 +32,7 @@ SMODS.Joker{ --Mimukawa Nice Try
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
-            if #context.scoring_hand == 4 then
+            if #context.full_hand == 4 then
                 return {
                     mult = card.ability.extra.mult
                 }

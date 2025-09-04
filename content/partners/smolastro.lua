@@ -17,7 +17,7 @@ Partner_API.Partner{
     loc_txt = {
         ['name'] = 'smol astro',
         ['text'] = {
-            [1] = '{C:attention}Meows{} at you.',
+            [1] = '{C:attention}Meows',
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

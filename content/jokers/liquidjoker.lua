@@ -7,8 +7,9 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
     loc_txt = {
         ['name'] = 'Liquid Joker',
         ['text'] = {
-            'Turns unscored cards in the first',
-            'played hand into {C:attention}Glass{}'
+            'Played and unscoring cards',
+            'in first played hand',
+            'become {C:attention}Glass'
         }
     },
     pos = {
@@ -23,6 +24,13 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+
+    loc_vars = function(self, info_queue, card)
+        info_queue[#info_queue + 1] = G.P_CENTERS.m_glass
+        return { 
+            
+        }
+    end,
 
     calculate = function(self, card, context) --card is this joker and context holds information about whats going on right now
     if context.before and not context.blueprint and not context.repetition and G.GAME.current_round.hands_played == 1 then --prevent animations from being repeated when it does nothing

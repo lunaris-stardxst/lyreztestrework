@@ -25,8 +25,8 @@ Partner_API.Partner{
     loc_txt = {
         ['name'] = "lil' milky",
         ['text'] = {
-            'Applies a random Edition',
-            'to a card when scored.',
+            'Applies a random {C:dark_edition}Edition',
+            'to scored cards',
             '',
             '{C:inactive}The smollest self-insert of all time.{}'
         },

@@ -5,8 +5,8 @@ SMODS.Back {
 	    loc_txt = {
         name ="Heartless Deck",
         text={
-            "Every {C:red}Heart{} in the deck.",
-			"is turned into a Diamond."
+            "Each {C:hearts}Heart{} in deck",
+			"is replaced with a {C:diamonds}Diamond{}"
         }
 		},
 	config = {},

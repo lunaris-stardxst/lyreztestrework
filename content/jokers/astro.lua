@@ -6,19 +6,12 @@ SMODS.Joker{ --Astro
             echips = 2
         }
     },
-    loc_vars = function(self, info_queue, card)
-        return { 
-            vars = { card.ability.extra.chipsadd } 
-        }
-    end,
     loc_txt = {
         ['name'] = 'Astro',
         ['text'] = {
-            [1] = '{C:attention}Meows{} and gives you',
-            [2] = '{C:blue}Chips{} for every time a card',
-            [3] = 'is scored. Increases chip',
-            [4] = 'amount every round.',
-            [5] = '{C:inactive,s:0.8}(Currently +#1# Chips){}'
+            [1] = '{C:blue}+#1#{} Chip(s) every time a card is scored',
+            [2] = '{C:attention}Meows{} when triggered',
+            [3] = 'Gains {C:chips}+1{} Chip at end of round',
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -75,9 +68,9 @@ SMODS.Joker{ --Astro
                     sound = play_sound('mktjk_mreow', 1.0, 1.0),
                     extra = {
                         func = function()
-                    card.ability.extra.chipsadd = (card.ability.extra.chipsadd) + 1
-                    return true
-                end,
+                            card.ability.extra.chipsadd = (card.ability.extra.chipsadd) + 1
+                            return true
+                        end,
                         colour = G.C.GREEN
                         }
                 }

@@ -8,8 +8,8 @@ SMODS.Joker{ --Yakuzen Kusuri
     loc_txt = {
         ['name'] = '{f:5}薬膳 楠莉',
         ['text'] = {
-            [1] = '{C:attention}1/5{} chance to give a scored',
-            [2] = 'card a random Enhancement.'
+            [1] = '{C:green}1 in 5{} chance to give scored',
+            [2] = 'cards a random {C:enhanced}Enhancement'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

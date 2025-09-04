@@ -24,9 +24,9 @@ SMODS.Joker{ --コハク
     loc_txt = {
         ['name'] = '{f:5}コハク',
         ['text'] = {
-            'Gives {X:red,C:white}X#1#{} Mult for every',
-            '{C:attention}9{} in your deck',
-            '{C:inactive}(Currently {}{X:red,C:white}X#2#{}{C:inactive}){}'
+            '{C:white,X:mult}X#1#{} Mult for each',
+            '{C:attention}9{} in full deck',
+            '{C:inactive}(Currently {C:white,X:mult}X#2#{C:inactive} Mult)'
         }
     },
     pos = {

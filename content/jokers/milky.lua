@@ -1,4 +1,4 @@
-SMODS.Joker{ --MiLKY-P
+SMODS.Joker{ -- MiLKY-P
     key = "milky",
     config = {
         extra = {
@@ -9,10 +9,10 @@ SMODS.Joker{ --MiLKY-P
         ['name'] = 'MiLKY-P',
         ['text'] = {
             'Applies a random',
-            'Effect, {C:dark_edition}Edition{} and Seal',
-            'to a card when scored.',
+            '{C:enhanced}Enhancement{}, {C:dark_edition}Edition{}, and',
+            '{C:attention}Seal{} to scored cards',
             '',
-            '{C:inactive}The self-insert of all time.{}'
+            '{C:inactive}The self-insert of all time'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

@@ -1,4 +1,4 @@
-SMODS.Joker{ --Waters Of Nazareth
+SMODS.Joker{ -- Waters Of Nazareth
     key = "wnazareth",
     config = {
         extra = {
@@ -14,7 +14,8 @@ SMODS.Joker{ --Waters Of Nazareth
     loc_txt = {
         ['name'] = 'Jokers Of Nazareth',
         ['text'] = {
-            'Each {C:clubs}Club{} held in hand gives {C:red}#1#x{} Mult'
+            'Each {C:clubs}Club{} card held in',
+            'hand gives {C:mult}+#1#{} Mult'
         }
     },
     pos = {

@@ -6,6 +6,7 @@ SMODS.Joker{ --Dont Tap The Joker
         }
     },
     loc_vars = function(self, info_queue, card)
+        info_queue[#info_queue + 1] = G.P_CENTERS.m_glass
         return { 
             vars = { card.ability.extra.mult } 
         }
@@ -14,9 +15,9 @@ SMODS.Joker{ --Dont Tap The Joker
         ['name'] = 'Dont Tap The Joker',
         ['text'] = {
             '{C:red}+#1#{} Mult',
-            'Destroys itself when',
-            'clicked or when a glass card',
-            'is used.'
+            '{C:red}Self-destructs{} when',
+            'clicked or when a {C:attention}Glass{} card',
+            'is triggered'
         }
     },
     pos = {
