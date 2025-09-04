@@ -27,6 +27,7 @@ SMODS.Back{
                 card:add_to_deck()
                 G.jokers:emplace(card)
 				card:set_edition({ negative = true })
+				card:set_eternal(true)
 				local card2 = SMODS.create_card({
 					set = 'Joker',
 					area = G.jokers,
@@ -37,6 +38,7 @@ SMODS.Back{
                 card2:add_to_deck()
                 G.jokers:emplace(card2)
 				card2:set_edition({ negative = true })
+				card2:set_eternal(true)
 				return true
 			end
         })

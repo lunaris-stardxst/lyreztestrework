@@ -10,23 +10,14 @@ Partner_API.Partner{
     atlas = "partners",
     config = {
         extra = {
-            chipsadd = 1,
-            echips = 2
         }
     },
 
-    loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.chipsadd}}
-    end,
 
     loc_txt = {
         ['name'] = 'smol astro',
         ['text'] = {
-            [1] = '{C:attention}Meows{} and gives you',
-            [2] = '{C:blue}Chips{} for every time a card',
-            [3] = 'is scored. Increases chip',
-            [4] = 'amount every round.',
-            [5] = '{C:inactive,s:0.8}(Currently +#1# Chips){}'
+            [1] = '{C:attention}Meows{} at you.',
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -38,99 +29,98 @@ Partner_API.Partner{
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
                 return {
-                    chips = card.ability.extra.chipsadd,
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
             end
         if context.starting_shop  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.end_of_round and context.game_over == false and context.main_eval  then
                 return {
-                    sound = play_sound('mktjk_mreow', 1.0, 1.0),
-                    extra = {
-                        func = function()
-                    card.ability.extra.chipsadd = (card.ability.extra.chipsadd) + 1
-                    return true
-                end,
-                        colour = G.C.GREEN
-                        }
-                }
-        end
+                    sound = play_sound('mktjk_mreow', 2.2, 1.0)
+                }    
+                end
         if context.after and context.cardarea == G.jokers  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.reroll_shop  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.other_joker  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.skip_blind  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.hand_drawn  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
-                }
-        end
-        if context.discard  then
-                return {
-                    sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.open_booster  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.skipping_booster  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.playing_card_added  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.using_consumeable  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.end_of_round and context.main_eval and G.GAME.blind.boss  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
         if context.ending_shop  then
                 return {
+                    message = "mrow!",
                     sound = 'mktjk_mreow',
-                    pitch = 1.0,
+                    pitch = 2.2,
                 }
         end
     end
