@@ -8,9 +8,10 @@ SMODS.Joker{ --Amitie
     loc_txt = {
         ['name'] = 'Amitie',
         ['text'] = {
-            [1] = 'Creates {C:tarot}The Magician{} card when',
-            [2] = 'hand contains a {C:attention}Full House{}.',
-            [3] = '{C:inactive}(Must have room){}'
+            [1] = 'Creates {C:tarot}The Magician{}',
+            [2] = 'when played hand contains',
+            [3] = 'a {C:attention}Full House{}',
+            [4] = '{C:inactive}(Must have room){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -28,7 +29,9 @@ SMODS.Joker{ --Amitie
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
-
+    loc_vars = function(self, info_queue, card)
+        table.insert(info_queue, G.P_CENTERS.c_magician)
+    end,
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if next(context.poker_hands["Full House"]) then
