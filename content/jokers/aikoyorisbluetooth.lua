@@ -9,9 +9,10 @@ SMODS.Joker{ --Aikoyoris Bluetooth
     loc_txt = {
         ['name'] = "Aikoyori's Bluetooth",
         ['text'] = {
-            [1] = '{C:attention}#2#/#3#{} chance to create a',
-            [2] = '{C:edition}Negative{} copy of the Joker',
-            [3] = 'to the left of this one.'
+            [1] = '{C:attention}#2#/#3#{} chance to create',
+            [2] = 'a {C:edition}Negative{} copy of',
+            [3] = 'Joker to the left',
+            [4] = 'when hand is played'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
