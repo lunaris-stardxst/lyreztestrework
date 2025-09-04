@@ -37,10 +37,6 @@ SMODS.Joker{ --Astro
     discovered = true,
     atlas = 'jokers',
 
-    loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.chipsadd}}
-    end,
-
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
             if G.GAME.round_resets.ante >= 8 then
