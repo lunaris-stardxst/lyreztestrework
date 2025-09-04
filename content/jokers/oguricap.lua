@@ -16,11 +16,10 @@ SMODS.Joker{ --Oguri Cap
     loc_txt = {
         ['name'] = 'Oguri Cap',
         ['text'] = {
-            '{C:green}#1#/#2#{} chance for Oguri Cap',
-            'to order {X:red,C:white}969{} 10pc bucket',
-            'meals at KFC, worth #4#$, putting you',
-            'into debt. Otherwise you',
-            'earn {C:gold}#3#${} per round.'
+            'Earn {C:money}$#3#{} at end of round',
+            '{C:green}#1# in #2#{} chance to',
+            'order {C:attention}969 10pc bucket',
+            '{C:attention}meals{} at {C:attention}KFC{}, costing {C:red}$#4#{}',
         }
     },
     pos = {
@@ -39,7 +38,7 @@ SMODS.Joker{ --Oguri Cap
     calculate = function(self, card, context)
         if context.end_of_round and not context.game_over and context.main_eval then
             if SMODS.pseudorandom_probability(card, 'yourseedhere', 1, card.ability.extra.odds, 'j_mktjk_oguricap') then
-                return { 
+                return {
                     dollars = -card.ability.extra.dollars2,
                     extra = {
                         message = 'Fatty.',
@@ -48,8 +47,8 @@ SMODS.Joker{ --Oguri Cap
                 }
             else
                 return {
-                     dollars = card.ability.extra.dollars 
-            }
+                    dollars = card.ability.extra.dollars 
+                }
             end
         end
     end

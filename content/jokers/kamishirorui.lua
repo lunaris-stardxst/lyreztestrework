@@ -8,13 +8,16 @@ SMODS.Joker{ --神代 類
     loc_txt = {
         ['name'] = '{f:5}神代 類',
         ['text'] = {
-            'If {C:attention}2{} or more Kings are played,',
-            'create a Perishable Negative copy',
+            'If {C:attention}2{} or more {C:attention}Kings{} are played,',
+            'create a {V:1}Perishable{} {C:dark_edition}Negative{} copy',
             'of the {C:attention}leftmost{} Joker'
         }
     },
-    loc_vars = function (self, queue, card)
-        queue[#queue+1] = {key = 'mktjk_kamishirorui_name', set = 'Other'}
+    loc_vars = function (self, info_queue, card)
+        info_queue[#info_queue+1] = {key = 'mktjk_kamishirorui_name', set = 'Other'}
+        info_queue[#info_queue + 1] = G.P_CENTERS.perishable -- doesn't work
+        info_queue[#info_queue + 1] = G.P_CENTERS.e_negative
+        return {vars = {colours = {{0.31, 0.37, 0.63, 1}}}}
     end,
     pos = {
         x = 8,

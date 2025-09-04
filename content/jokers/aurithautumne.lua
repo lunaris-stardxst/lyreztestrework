@@ -8,9 +8,10 @@ SMODS.Joker{ --Aurith Autumne
     loc_txt = {
         ['name'] = 'Aurith Autumne',
         ['text'] = {
-            [1] = 'Earn {C:gold}#1#${} if played hand',
+            [1] = 'Earn {C:gold}$#1#{} if played hand',
             [2] = 'contains both a {C:attention}scoring{}',
-            [3] = '{C:clubs}Club{} and {C:diamonds}Diamond{}'
+            [3] = '{C:clubs}Club{} card and a scoring',
+            [4] = '{C:diamonds}Diamond{} card'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

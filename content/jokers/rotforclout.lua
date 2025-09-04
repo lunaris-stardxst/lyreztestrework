@@ -10,11 +10,11 @@ SMODS.Joker{ --ROT FOR CLOUT
     loc_txt = {
         ['name'] = 'ROT FOR CLOUT',
         ['text'] = { -- fixed formatting and colors
-            [1] = 'Sell value goes down',
-            [2] = 'every round but adds',
-            [3] = '{X:mult,C:white}X#2#{} Mult for {C:attention}every round{}',
-            [4] = 'this card is held in hand.',
-            [5] = '{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult){}'
+            [1] = '{C:money}-$#2#{} sell value at',
+            [2] = 'end of round',
+            [3] = 'Gains {C:white,X:mult}X#2#{} Mult at',
+            [4] = 'end of round',
+            [5] = '{C:inactive}(Currently {C:white,X:mult}X#1#{C:inactive} Mult)'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -58,9 +58,9 @@ SMODS.Joker{ --ROT FOR CLOUT
             end
         end
         if context.cardarea == G.jokers and context.joker_main  then
-                return {
-                    Xmult = card.ability.extra.multforclout
-                }
+            return {
+                Xmult = card.ability.extra.multforclout
+            }
         end
     end
 }

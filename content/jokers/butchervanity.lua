@@ -11,12 +11,12 @@ SMODS.Joker{ --Butcher Vanity
     loc_txt = {
         ['name'] = 'Butcher Vanity',
         ['text'] = {
-            [1] = '{C:attention}#3#/#4#{} chance for a random',
-            [2] = 'consumeable to be destroyed.',
-            [3] = 'Adds an additional {X:red,C:white}#2#X{} Mult for',
-            [4] = 'every card destroyed.',
-            [5] = '{C:inactive,s:0.8}(Must have at least 1 consumeable.){}',
-            [6] = '{C:inactive}(Currently #1#X Mult){}'
+            [1] = '{C:green}#3# in #4#{} chance for a random',
+            [2] = '{C:attention}consumable{} to be destroyed',
+            [3] = 'when hand played',
+            [4] = '{C:inactive,s:0.8}(Must have at least {C:attention,s:0.8}1 consumable{C:inactive,s:0.8})',
+            [5] = 'Gains {C:white,X:mult}X#2#{} Mult for each card destroyed',
+            [6] = '{C:inactive}(Currently {C:white,X:mult}X#1#{} {C:inactive}Mult)'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

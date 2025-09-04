@@ -7,12 +7,12 @@ SMODS.Back{
     loc_txt = {
         name ="Astro's Deck",
         text={
-            "Start with 2 Eternal", 
-            "Negative Astro Jokers",
+            "Start with {C:attention}2{} {V:1}Eternal", 
+            "{C:dark_edition,T:e_negative}Negative{} {C:attention,T:j_mktjk_astro}Astros",
         }
 	},
 	loc_vars = function(self,info_queue,card)
-		return {vars = {self.config.extra.winning_ante}}
+		return {vars = {self.config.extra.winning_ante, colours = {{0.78, 0.35, 0.52, 1}}}}
 	end,
     apply = function(self, back)
 		G.E_MANAGER:add_event(Event({

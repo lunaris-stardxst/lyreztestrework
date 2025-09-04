@@ -8,7 +8,7 @@ SMODS.Joker{ --lolang from librarby of runia
     loc_txt = {
         ['name'] = 'lolang from librarby of runia',
         ['text'] = {
-            [1] = 'Gives {X:red,C:white}X2{} Mult if played',
+            [1] = '{C:white,X:chips}X2{} Chips if played',
             [2] = 'hand contains a {C:attention}Queen{}',
             [3] = '',
             [4] = '{s:0.7,C:inactive,E:1}Himdeul-eoss-eoyo? Jichyeoss-eoyo. Swigosip-eoyo?{}',

@@ -13,8 +13,8 @@ SMODS.Joker {
     loc_txt = {
         name = "Stelle Steelbrooke",
         text = {
-            "Scored cards give",
-            "{X:mult,C:white}X#1#{} Mult",
+            "Played cards give",
+            "{X:mult,C:white}X#1#{} Mult when scored",
             "Increases by {X:mult,C:white}X#2#{}",
             "when a {C:attention}Steel{}",
             "card is scored"
