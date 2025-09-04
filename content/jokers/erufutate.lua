@@ -8,7 +8,8 @@ SMODS.Joker{ --Eru Futate
     loc_txt = {
         ['name'] = '{f:5}双天 彗流',
         ['text'] = {
-            '{X:red,C:white}X22{} Mult if played hand contains a {C:orange}Pair{}'
+            '{X:mult,C:white}X22{} Mult if played',
+            'hand contains a {C:attention}Pair{}'
         }
     },
     loc_vars = function (self, queue, card)
