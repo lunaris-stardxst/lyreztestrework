@@ -14,11 +14,12 @@ SMODS.Joker{ --Astro
     loc_txt = {
         ['name'] = 'Astro',
         ['text'] = {
-            [1] = '{C:attention}Meows{} and gives you',
-            [2] = '{C:blue}Chips{} for every time a card',
-            [3] = 'is scored. Increases chip',
-            [4] = 'amount every round.',
-            [5] = '{C:inactive,s:0.8}(Currently +#1# Chips){}'
+            'Played cards give {C:chips}+#1#{}',
+            'Chips when scored,',
+            'increases by {C:attention}1{}',
+            'at end of round',
+            '{C:attention}Meows{} when you do',
+            'almost anything'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -65,18 +66,17 @@ SMODS.Joker{ --Astro
                     pitch = 1.0,
                 }
         end
-        if context.end_of_round and context.game_over == false and context.main_eval  then
-                return {
-                    message = "mreow!",
-                    sound = play_sound('mktjk_mreow', 1.0, 1.0),
-                    extra = {
-                        func = function()
-                    card.ability.extra.chipsadd = (card.ability.extra.chipsadd) + 1
-                    return true
-                end,
-                        colour = G.C.GREEN
-                        }
-                }
+        if context.end_of_round and context.game_over == false and context.main_eval then
+            if not context.blueprint then
+                card.ability.extra.chipsadd = (card.ability.extra.chipsadd) + 1
+            end
+            return {
+                message = "mreow!",
+                sound = play_sound('mktjk_mreow', 1.0, 1.0),
+                extra = {
+                    colour = G.C.GREEN
+                    }
+            }
         end
         if context.after and context.cardarea == G.jokers  then
                 return {
