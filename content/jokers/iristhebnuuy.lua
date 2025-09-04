@@ -9,7 +9,7 @@ SMODS.Joker{ --Iris the Bnuuy!
         ['name'] = 'Iris the Bnuuy!',
         ['text'] = {
             [1] = 'Creates a random {C:spectral}Spectral{} Card',
-            [2] = 'after defeating {C:attention}Boss Blind{}'
+            [2] = 'after defeating a {C:attention}Boss Blind{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
