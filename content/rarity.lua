@@ -1,9 +1,9 @@
 SMODS.Rarity {
-    key = "useless",
+    key = "jimmy",
     default_weight = 0.5,
     badge_colour = HEX("7f7fb1"),
     loc_txt = {
-        name = "Useless"
+        name = "JIMMY"
     },
     get_weight = function(self, weight, object_type)
         return weight
