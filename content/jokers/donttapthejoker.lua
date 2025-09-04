@@ -16,7 +16,7 @@ SMODS.Joker{ --Dont Tap The Joker
         ['text'] = {
             '{C:mult}+#1#{} Mult',
             '{C:red}Self-destructs{} when',
-            'clicked or if a Glass card',
+            'clicked or if a {C:attention}Glass{} card',
             'is destroyed'
         }
     },

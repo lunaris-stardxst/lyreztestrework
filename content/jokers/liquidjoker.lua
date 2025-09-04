@@ -17,7 +17,7 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
         y = 0
     },
     cost = 12,
-    rarity = 3,
+    rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

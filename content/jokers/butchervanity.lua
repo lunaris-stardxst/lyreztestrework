@@ -29,7 +29,7 @@ SMODS.Joker{ --Butcher Vanity
         y = 3
     },
     cost = 4,
-    rarity = 1,
+    rarity = 4,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
