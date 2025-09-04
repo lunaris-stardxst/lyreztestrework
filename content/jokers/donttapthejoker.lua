@@ -13,10 +13,10 @@ SMODS.Joker{ --Dont Tap The Joker
     loc_txt = {
         ['name'] = 'Dont Tap The Joker',
         ['text'] = {
-            '{C:red}+#1#{} Mult',
-            'Destroys itself when',
-            'clicked or when a glass card',
-            'is used.'
+            '{C:mult}+#1#{} Mult',
+            '{C:red}Self-destructs{} when',
+            'clicked or if a Glass card',
+            'is destroyed'
         }
     },
     pos = {
