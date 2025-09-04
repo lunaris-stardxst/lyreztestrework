@@ -6,6 +6,7 @@ SMODS.Joker{ --Dont Tap The Joker
         }
     },
     loc_vars = function(self, info_queue, card)
+        table.insert(info_queue, G.P_CENTERS.m_glass)
         return { 
             vars = { card.ability.extra.mult } 
         }
