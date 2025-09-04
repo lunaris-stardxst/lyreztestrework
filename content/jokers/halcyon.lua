@@ -1,4 +1,4 @@
-SMODS.Joker{ --Halcyon Sentipydes
+SMODS.Joker{ -- Halcyon Sentipydes
     key = "halcyon",
     config = {
         extra = {

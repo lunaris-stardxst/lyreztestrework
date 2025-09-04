@@ -1,4 +1,4 @@
-SMODS.Joker{ --Mill the Romcom Angel
+SMODS.Joker{ -- Mill the Romcom Angel
     key = "mill",
     config = {
         extra = {
@@ -8,8 +8,8 @@ SMODS.Joker{ --Mill the Romcom Angel
     loc_txt = {
         ['name'] = 'Mill the Romcom Angel',
         ['text'] = {
-            [1] = 'Gives {X:red,C:white}#1#X{} Mult if hand',
-            [2] = 'contains both a King and Queen'
+            [1] = '{C:white,X:mult}X#1#{} Mult if played hand',
+            [2] = 'contains both a {C:attention}King{} and {C:attention}Queen'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

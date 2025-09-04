@@ -37,6 +37,12 @@ SMODS.Joker{ --Corobo
     discovered = true,
     atlas = 'jokers',
 
+    loc_vars = function(self, info_queue, card)
+        return { 
+            vars = { colours = {{0.8, 0.45, 0.85, 1}} } 
+        }
+    end,
+
     calculate = function(self, card, context)
         if context.final_scoring_step and context.cardarea == G.jokers then
                 if gcd(to_big(hand_chips), to_big(mult)) == to_big(1) then

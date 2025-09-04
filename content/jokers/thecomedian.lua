@@ -1,4 +1,4 @@
-SMODS.Joker{ --The Comedian
+SMODS.Joker { -- The Comedian
     key = "thecomedian",
     config = {
         extra = {
@@ -9,8 +9,8 @@ SMODS.Joker{ --The Comedian
     loc_txt = {
         ['name'] = 'The Comedian',
         ['text'] = {
-            '{X:red,C:white}X10{} Mult',
-            '{C:green}#1# in 10000{} chance this card is',
+            '{C:white,X:mult}X10{} Mult',
+            '{C:green}#1# in #2#{} chance this card is',
             'destroyed at the end of round'
         }
     },

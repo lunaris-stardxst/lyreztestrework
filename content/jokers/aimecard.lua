@@ -9,8 +9,9 @@ SMODS.Joker{ --Aime Card
     loc_txt = {
         ['name'] = 'Aime Card',
         ['text'] = {
-            '{C:attention}1 in 2{} chance for',
-            'scoring cards to return to deck.'
+            '{C:green}1 in 2{} chance for',
+            'played cards to',
+            'return to deck'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

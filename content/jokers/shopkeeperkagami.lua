@@ -8,8 +8,7 @@ SMODS.Joker{ --Shop Keeper Kagami
     loc_txt = {
         ['name'] = 'Shop Keeper Kagami',
         ['text'] = {
-            [1] = 'Gives a #1#% discount',
-            [2] = 'on every shop item.'
+            [1] = 'All shop items are {C:attention}#1#%{} off'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

@@ -1,4 +1,4 @@
-SMODS.Joker{ --s950tx16wasr10 (joker mix)
+SMODS.Joker{ -- s950tx16wasr10 (joker mix)
     key = "aphextwinsyro",
     config = {
         extra = {
@@ -10,7 +10,7 @@ SMODS.Joker{ --s950tx16wasr10 (joker mix)
     loc_txt = {
         ['name'] = 's950tx16wasr10 (joker mix)',
         ['text'] = {
-            '{X:edition,C:white}what the fuck{}',
+            '{X:dark_edition,C:white}what the fuck{}',
             'what do you mean this joker doesnt do anything'
         }
     },

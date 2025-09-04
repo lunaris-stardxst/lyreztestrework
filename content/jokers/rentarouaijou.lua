@@ -15,10 +15,10 @@ SMODS.Joker{ --Rentarou Aijou
     loc_txt = {
         ['name'] = '{f:5}愛城 恋太郎',
         ['text'] = {
-            'Gives XMult equal to the amount',
-            'of soulmates Rentarou has',
-            'and revives you upon death in boss blinds.',
-            '{C:inactive}(currently {}{X:mult,C:white}#1#X{}{C:inactive} mult){}'
+            'Gives {C:white,X:mult}XMult{} equal to the number',
+            'of soulmates {C:attention}Rentarou{} has',
+            'Prevents death in {C:attention}Boss Blinds',
+            '{C:inactive}(Currently {C:white,X:mult}X#1#{C:inactive} Mult)'
         }
     },
     pos = {

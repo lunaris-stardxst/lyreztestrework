@@ -5,8 +5,7 @@ SMODS.Back {
     loc_txt = {
         name = "'Oops All Aces!' Deck",
         text = {
-            "Every card in the deck is",
-            "an Ace."
+            "All cards are {C:attention}Aces"
         }
     },
     config = {aces = 'Ace'},

@@ -7,8 +7,8 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
     loc_txt = {
         ['name'] = 'Liquid Joker',
         ['text'] = {
-            'Unscored cards in first',
-            'played hand of round',
+            'Played and unscoring cards',
+            'in first played hand',
             'become {C:attention}Glass{} cards'
         }
     },

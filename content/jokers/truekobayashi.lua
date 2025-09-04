@@ -8,8 +8,8 @@ SMODS.Joker{ --True Kobayashi
     loc_txt = {
         ['name'] = 'True Kobayashi',
         ['text'] = {
-            [1] = '{C:planet}Everything{} in the shop is {C:attention}free.{}',
-            [2] = 'Rerolls start at {C:money}$0{}'
+            [1] = '{C:attention}Everything{} in shop is {C:green}free',
+            [2] = '{C:green}Rerolls{} start at {C:money}$0'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

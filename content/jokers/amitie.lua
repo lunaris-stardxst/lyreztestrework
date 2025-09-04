@@ -1,10 +1,5 @@
 SMODS.Joker{ --Amitie
     key = "amitie",
-    config = {
-        extra = {
-            Tarot = 0
-        }
-    },
     loc_txt = {
         ['name'] = 'Amitie',
         ['text'] = {
@@ -29,9 +24,7 @@ SMODS.Joker{ --Amitie
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
-    loc_vars = function(self, info_queue, card)
-        table.insert(info_queue, G.P_CENTERS.c_magician)
-    end,
+
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             if next(context.poker_hands["Full House"]) then
