@@ -54,7 +54,7 @@ SMODS.Joker{ --Butcher Vanity
                 local card_to_destroy = pseudorandom_element(target_cards, pseudoseed('destroy_consumable'))
                 G.E_MANAGER:add_event(Event({
                     func = function()
-                        card_to_destroy:start_dissolve()
+                        SMODS.destroy_cards(card_to_destroy)
                         return true
                     end
                 }))
