@@ -20,6 +20,7 @@ SMODS.Joker{ --tbh creature
         x = 6,
         y = 3
     },
+    pronouns = "autism",
     cost = 6,
     rarity = 1,
     blueprint_compat = true,

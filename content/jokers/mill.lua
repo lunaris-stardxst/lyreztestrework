@@ -24,6 +24,7 @@ SMODS.Joker{ -- Mill the Romcom Angel
         x = 8,
         y = 2
     },
+    pronouns = "she_her",
     cost = 4,
     rarity = 2,
     blueprint_compat = true,

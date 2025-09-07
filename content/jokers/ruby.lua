@@ -21,6 +21,7 @@ SMODS.Joker{ --ruby
         x = 6,
         y = 1
     },
+    pronouns = "she_they",
     cost = 20,
     rarity = 4,
     blueprint_compat = true,

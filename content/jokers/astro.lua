@@ -21,6 +21,7 @@ SMODS.Joker{ --Astro
         x = 9,
         y = 2
     },
+    pronouns = "he_him",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

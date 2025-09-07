@@ -22,6 +22,7 @@ SMODS.Joker{ -- Waters Of Nazareth
         x = 5,
         y = 1
     },
+    pronouns = "it_its",
     cost = 6,
     rarity = 3,
     blueprint_compat = true,

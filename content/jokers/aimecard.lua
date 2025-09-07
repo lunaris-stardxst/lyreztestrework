@@ -21,6 +21,7 @@ SMODS.Joker{ --Aime Card
         x = 0,
         y = 2
     },
+    pronouns = "it_its",
     cost = 5,
     rarity = 2,
     blueprint_compat = true,

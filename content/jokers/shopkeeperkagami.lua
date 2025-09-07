@@ -21,6 +21,7 @@ SMODS.Joker{ --Shop Keeper Kagami
         x = 3,
         y = 2
     },
+    pronouns = "she_they",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

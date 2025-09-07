@@ -25,6 +25,7 @@ SMODS.Joker{ --Tokyo Subway Pass
         w = 71 * 1, 
         h = 95 * 1
     },
+    pronouns = "it_its",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

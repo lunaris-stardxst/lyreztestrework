@@ -16,6 +16,7 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
         x = 3,
         y = 0
     },
+    pronouns = "it_its",
     cost = 12,
     rarity = 3,
     blueprint_compat = true,

@@ -22,6 +22,7 @@ SMODS.Joker{ --Silly Stelle Steelbrooke
         x = 2,
         y = 1
     },
+    pronouns = "they_them",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,

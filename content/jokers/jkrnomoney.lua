@@ -22,6 +22,7 @@ SMODS.Joker{ --jokerno$
         x = 3,
         y = 1
     },
+    pronouns = "he_him",
     cost = 7,
     rarity = 2,
     blueprint_compat = true,

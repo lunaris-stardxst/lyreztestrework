@@ -21,6 +21,7 @@ SMODS.Joker{ --Mimukawa Nice Try
         x = 4,
         y = 0
     },
+    pronouns = "she_her",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,

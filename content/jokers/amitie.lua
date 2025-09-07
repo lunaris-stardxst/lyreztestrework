@@ -15,6 +15,7 @@ SMODS.Joker{ --Amitie
         x = 7,
         y = 3
     },
+    pronouns = "she_they",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,

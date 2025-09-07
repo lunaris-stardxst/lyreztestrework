@@ -24,6 +24,7 @@ SMODS.Joker{ --Haru Urara
         x = 5,
         y = 2
     },
+    pronouns = "she_her",
     cost = 1,
     rarity = 1,
     blueprint_compat = true,

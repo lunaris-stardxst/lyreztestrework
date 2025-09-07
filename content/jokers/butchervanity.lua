@@ -26,6 +26,7 @@ SMODS.Joker{ --Butcher Vanity
         x = 4,
         y = 3
     },
+    pronouns = "she_her",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

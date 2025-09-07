@@ -15,6 +15,7 @@ Partner_API.Partner{
     
     link_config = {j_mktjk_milky = 1},
 
+    pronouns = "she_theyxhey",
 
     loc_txt = {
         ['name'] = "lil' milky",

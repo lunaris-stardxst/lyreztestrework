@@ -26,6 +26,7 @@ SMODS.Joker{ --Oguri Cap
         x = 5,
         y = 0
     },
+    pronouns = "fatty",
     cost = 1,
     rarity = 1,
     blueprint_compat = false,

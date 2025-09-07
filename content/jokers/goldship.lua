@@ -23,6 +23,7 @@ SMODS.Joker{ --Gold Ship
         x = 2,
         y = 0
     },
+    pronouns = "she_her",
     cost = 8,
     rarity = 2,
     blueprint_compat = true,

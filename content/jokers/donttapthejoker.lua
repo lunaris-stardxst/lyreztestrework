@@ -24,6 +24,7 @@ SMODS.Joker{ --Dont Tap The Joker
         x = 0,
         y = 0
     },
+    pronouns = "he_him",
     cost = 5,
     rarity = 2,
     blueprint_compat = true,

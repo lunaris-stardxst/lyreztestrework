@@ -23,6 +23,7 @@ SMODS.Joker{ --Divine Dream Cookie
         x = 0,
         y = 1
     },
+    pronouns = "she_they",
     cost = 8,
     rarity = 3,
     blueprint_compat = true,

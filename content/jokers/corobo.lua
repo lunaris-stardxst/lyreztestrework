@@ -28,6 +28,7 @@ SMODS.Joker{ --Corobo
         x = 6,
         y = 2
     },
+    pronouns = "she_her",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,

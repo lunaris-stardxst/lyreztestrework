@@ -25,6 +25,7 @@ SMODS.Joker{ --Rentarou Aijou
         x = 6,
         y = 0
     },
+    pronouns = "he_him",
     cost = 35,
     rarity = 4,
     blueprint_compat = true,

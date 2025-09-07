@@ -21,6 +21,7 @@ SMODS.Joker { -- Rotten Girl Miku
         x = 4,
         y = 2
     },
+    pronouns = "yaoi",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,

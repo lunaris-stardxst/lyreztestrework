@@ -19,6 +19,7 @@ SMODS.Joker{ --Iris the Bnuuy!
         x = 8,
         y = 3
     },
+    pronouns = "he_they",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,

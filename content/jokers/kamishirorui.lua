@@ -23,6 +23,7 @@ SMODS.Joker{ --神代 類
         x = 8,
         y = 1
     },
+    pronouns = "he_they",
     cost = 12,
     rarity = 3,
     blueprint_compat = true,

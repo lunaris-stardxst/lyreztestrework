@@ -31,6 +31,7 @@ SMODS.Joker{ --Mr. Morale and the Big Steppers
         x = 9,
         y = 1
     },
+    pronouns = "he_him",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,

@@ -22,6 +22,7 @@ SMODS.Joker{ --lolang from librarby of runia
         x = 0,
         y = 3
     },
+    pronouns = "he_him",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

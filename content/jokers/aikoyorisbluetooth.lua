@@ -21,6 +21,7 @@ SMODS.Joker { -- Aikoyoris Bluetooth
         x = 4,
         y = 4
     },
+    pronouns = "it_its",
     cost = 6,
     rarity = 1,
     blueprint_compat = true,

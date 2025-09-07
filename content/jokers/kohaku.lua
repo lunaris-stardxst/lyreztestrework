@@ -29,6 +29,7 @@ SMODS.Joker{ --コハク
             '{C:inactive}(Currently {C:white,X:mult}X#2#{C:inactive} Mult)'
         }
     },
+    pronouns = "she_her",
     pos = {
         x = 4,
         y = 1,

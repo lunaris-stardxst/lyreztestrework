@@ -21,6 +21,7 @@ SMODS.Joker{ --stellegoe :3
         x = 1,
         y = 4
     },
+    pronouns = "it_its",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

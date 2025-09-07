@@ -19,6 +19,7 @@ SMODS.Joker{ --Commodore 64 BASIC Prompt
         x = 1,
         y = 3
     },
+    pronouns = "it_its",
     cost = 5,
     rarity = 2,
     blueprint_compat = true,

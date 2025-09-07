@@ -24,6 +24,7 @@ SMODS.Joker{ --Melody Nosurname
         x = 6,
         y = 4
     },
+    pronouns = "she_they",
     cost = 8,
     rarity = 2,
     blueprint_compat = true,

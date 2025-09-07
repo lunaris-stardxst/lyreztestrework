@@ -24,6 +24,7 @@ SMODS.Joker{ --ROT FOR CLOUT
         x = 7,
         y = 2
     },
+    pronouns = "she_her",
     cost = 12,
     rarity = 2,
     blueprint_compat = true,

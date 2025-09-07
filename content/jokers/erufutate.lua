@@ -20,6 +20,7 @@ SMODS.Joker{ --Eru Futate
         x = 1,
         y = 0
     },
+    pronouns = "she_her",
     cost = 22,
     rarity = 4,
     blueprint_compat = true,

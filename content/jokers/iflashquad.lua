@@ -17,6 +17,7 @@ SMODS.Joker{ --iFlash Quad
         x = 9,
         y = 4
     },
+    pronouns = "it_its",
     cost = 8,
     rarity = 3,
     blueprint_compat = true,

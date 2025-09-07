@@ -18,6 +18,7 @@ SMODS.Joker { -- The Comedian
         x = 8,
         y = 0
     },
+    pronouns = "it_its",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

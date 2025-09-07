@@ -19,6 +19,7 @@ SMODS.Joker{ --True Kobayashi
         x = 9,
         y = 0
     },
+    pronouns = "she_her",
     cost = 20,
     rarity = 4,
     blueprint_compat = true,

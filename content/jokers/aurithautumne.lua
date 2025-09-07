@@ -21,6 +21,7 @@ SMODS.Joker{ --Aurith Autumne
         x = 0,
         y = 4
     },
+    pronouns = "she_they",
     cost = 7,
     rarity = 2,
     blueprint_compat = true,

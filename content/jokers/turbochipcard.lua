@@ -20,6 +20,7 @@ SMODS.Joker { -- TurboChip Card
         x = 3,
         y = 3
     },
+    pronouns = "it_its",
     cost = 13,
     rarity = 3,
     blueprint_compat = true,

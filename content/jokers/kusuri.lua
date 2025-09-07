@@ -22,6 +22,7 @@ SMODS.Joker{ --Yakuzen Kusuri
         x = 2,
         y = 3
     },
+    pronouns = "she_her",
     cost = 8,
     rarity = 3,
     blueprint_compat = true,
