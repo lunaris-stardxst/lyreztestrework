@@ -23,7 +23,7 @@ SMODS.Joker{ -- Halcyon Sentipydes
     },
     pronouns = "they_them",
     cost = 7,
-    rarity = 2,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
