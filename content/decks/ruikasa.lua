@@ -12,6 +12,7 @@ SMODS.Back{
 			"an {V:1}Eternal {C:dark_edition,T:e_negative}Negative{} {C:attention,T:j_mktjk_tsukasatenma,f:5}神代 類{}"
         }
 	},
+	pronouns = "yaoi",
 	loc_vars = function(self,info_queue,card)
 		return {vars = {self.config.extra.winning_ante, colours = {{0.78, 0.35, 0.52, 1}}}}
 	end,

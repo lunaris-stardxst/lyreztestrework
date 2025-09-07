@@ -16,6 +16,7 @@ SMODS.Voucher { -- Should I Open It or Should I Keep It Sealed
     unlocked = true,
     discovered = true,
     atlas = 'vouchers',
+    pronouns = "he_him",
 
     loc_vars = function(self, info_queue, card)
         return { 

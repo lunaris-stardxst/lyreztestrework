@@ -9,6 +9,7 @@ SMODS.Back {
             "and {C:attention,T:j_mktjk_milky}MiLKY-P",
         }
     },
+    pronouns = "she_theyxhey",
     config = { 
         consumables = {'c_cryptid'},
         jokers = {'j_mktjk_milky'},
