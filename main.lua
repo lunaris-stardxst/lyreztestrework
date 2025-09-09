@@ -92,6 +92,8 @@ function AddRunningAnimation(a)
     end
 end
 
+mod_path = SMODS.current_mod.path
+
 function Game:update(dt)
     upd(self, dt)
     if dt_table then
@@ -135,6 +137,8 @@ function Game:update(dt)
         end
     end
 end
+
+
 
 -- shaders
 
