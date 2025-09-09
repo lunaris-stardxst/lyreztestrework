@@ -271,6 +271,27 @@ SMODS.Sound({
     end
 })
 
+-- make the object type for all milky jokers
+SMODS.ObjectType {
+    key = "mktjk_milkys_jokers",
+    default = "j_mktjk_milky",
+    cards = {}
+}
+
+-- throw all milky jokers into the object type
+-- shoutouts joyousspring for reference
+local inject_items_ref = SMODS.injectItems
+SMODS.injectItems = function()
+    inject_items_ref()
+
+    for i, v in ipairs(G.P_CENTER_POOLS.Joker) do
+        local joker_key = v.key
+        if joker_key:sub(1, 7) == "j_mktjk" then
+            SMODS.ObjectTypes["mktjk_milkys_jokers"]:inject_card(v)
+        end
+    end
+end
+
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
