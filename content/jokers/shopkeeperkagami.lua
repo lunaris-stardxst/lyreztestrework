@@ -30,6 +30,10 @@ SMODS.Joker{ --Shop Keeper Kagami
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+
     in_pool = function(self, args)
           return (
           not args

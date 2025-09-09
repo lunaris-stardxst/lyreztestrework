@@ -38,6 +38,9 @@ SMODS.Joker{ --Oguri Cap
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.end_of_round and not context.game_over and context.main_eval then

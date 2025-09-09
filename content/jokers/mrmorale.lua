@@ -40,6 +40,9 @@ SMODS.Joker{ --Mr. Morale and the Big Steppers
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.discard then

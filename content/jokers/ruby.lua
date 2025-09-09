@@ -30,6 +30,7 @@ SMODS.Joker{ --ruby
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+
     in_pool = function (self, args)
         return false
     end,

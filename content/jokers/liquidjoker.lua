@@ -25,7 +25,10 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
-
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+    
     loc_vars = function(self, info_queue, card)
         table.insert(info_queue, G.P_CENTERS.m_glass)
     end,

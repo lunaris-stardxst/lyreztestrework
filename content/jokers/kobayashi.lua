@@ -25,6 +25,9 @@ SMODS.Joker{ --Miss Kobayashi:
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     add_to_deck = function(self, card, from_debuff)
         G.E_MANAGER:add_event(Event({

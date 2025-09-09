@@ -34,6 +34,9 @@ SMODS.Joker{ --Tokyo Subway Pass
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.before_expiry, card.ability.extra.multvar}}

@@ -28,6 +28,9 @@ SMODS.Joker{ --Commodore 64 BASIC Prompt
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.repetitions}}

@@ -29,6 +29,9 @@ SMODS.Joker{ --Aime Card
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
 -- this is a temporary effect. i will replace this once i figure out how to implement it
 

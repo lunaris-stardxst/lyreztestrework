@@ -26,5 +26,8 @@ SMODS.Joker{ -- s950tx16wasr10 (joker mix)
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'jokers'
+    atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 }

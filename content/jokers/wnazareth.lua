@@ -33,6 +33,9 @@ SMODS.Joker{ -- Waters Of Nazareth
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.hand and not context.end_of_round  then

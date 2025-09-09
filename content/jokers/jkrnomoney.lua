@@ -32,6 +32,9 @@ SMODS.Joker{ --jokerno$
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     set_ability = function(self, card, initial, delay_sprites)
       card:set_rental(true)

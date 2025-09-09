@@ -29,6 +29,9 @@ SMODS.Joker{ --Minecraft Parkour
     unlocked = true,
     discovered = true,
     atlas = 'mcparkour',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return { 

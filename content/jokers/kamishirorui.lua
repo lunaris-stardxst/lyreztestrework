@@ -32,6 +32,9 @@ SMODS.Joker{ --神代 類
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
 -- note to self. find a way to make the ruis stop mitosing. 
 -- it works for now but this will eventually crash the game.

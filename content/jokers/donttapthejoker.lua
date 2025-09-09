@@ -33,6 +33,9 @@ SMODS.Joker{ --Dont Tap The Joker
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         -- apply mult

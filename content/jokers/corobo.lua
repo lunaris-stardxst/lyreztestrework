@@ -37,6 +37,9 @@ SMODS.Joker{ --Corobo
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return { 

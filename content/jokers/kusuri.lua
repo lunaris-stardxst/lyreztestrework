@@ -32,6 +32,9 @@ SMODS.Joker{ --Yakuzen Kusuri
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
