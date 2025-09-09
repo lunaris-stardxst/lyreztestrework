@@ -10,8 +10,9 @@ SMODS.Joker{ --Haru Urara
     loc_txt = {
         ['name'] = '{f:5}ハルウララ',
         ['text'] = {
-            [1] = '{C:chips}+1{} Chip',
-            [2] = '{s:0.8,C:dark_edition}Always bet on losing horses!{}'
+            '{C:chips}+1{} Chip',
+            '{s:0.8,C:dark_edition}Rest in peace, our shining star.{}',
+            '{s:0.6,C:inactive}2/27/1996 - 9/9/2025{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'

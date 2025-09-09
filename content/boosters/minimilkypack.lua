@@ -20,7 +20,7 @@ SMODS.Booster {
     end,
     create_card = function(self, card, i)
         return {
-        set = "mktjk_milkys_jokers",
+        set = "milkys_jokers",
             area = G.pack_cards,
             skip_materialize = true,
             soulable = true,
