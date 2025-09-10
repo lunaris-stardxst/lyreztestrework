@@ -20,6 +20,9 @@ SMODS.Joker {
             "card is scored"
         }
     },
+    loc_vars = function (self, queue, card)
+        queue[#queue+1] = {key = 'mktjk_credit_astro', set = 'Other'}
+    end,
     pronouns = "they_them",
 
     calculate = function(self, card, context)

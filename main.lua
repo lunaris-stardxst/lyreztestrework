@@ -38,6 +38,8 @@ SMODS.Atlas({
     path = "bossblinds_atlas.png",
     px = 34,
     py = 34,
+    atlas_table = "ANIMATION_ATLAS",
+    frames = 21,
 })
 
 SMODS.Atlas {
@@ -54,6 +56,7 @@ SMODS.Atlas {
     path = "selfinsert_atlas.png",
     px = 71,
     py = 95,
+
 }
 
 SMODS.Atlas {

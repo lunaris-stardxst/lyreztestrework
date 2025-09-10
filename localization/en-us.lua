@@ -73,6 +73,13 @@ return {
                     "{C:inactive,s:0.9}- milky, 2025"
                 },
             },
+        mktjk_credit_astro={
+                name="Art done by",
+                text={
+                    "{s:1.5}Astro",
+                    "{C:inactive,s:0.9}@silly_goober_0nthewall"
+                },
+            },
       }
     },
   misc = {
