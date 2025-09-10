@@ -9,7 +9,7 @@ SMODS.Booster {
     },
     config = { extra = 6, choose = 2 },
     atlas = "boosters",
-    pos = { x = 0, y = 0 },
+    pos = { x = 1, y = 0 },
     group_key = "milkysboosters",
     discovered = true,
     loc_vars = function(self, info_queue, card)
