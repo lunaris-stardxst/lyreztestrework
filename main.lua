@@ -33,6 +33,13 @@ SMODS.Atlas({
     py = 95,
 })
 
+SMODS.Atlas({
+    key = "blinds", -- dont change this until you figure out how to change it without breaking everything
+    path = "bossblinds_atlas.png",
+    px = 34,
+    py = 34,
+})
+
 SMODS.Atlas {
     key = "modicon",
     path = "modicon.png",

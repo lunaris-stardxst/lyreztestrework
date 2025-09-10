@@ -30,15 +30,17 @@ SMODS.Blind {
     loc_vars = function(self)
         return {key = next(SMODS.find_mod("Yahimod")) and "bl_mktjk_dvd_alt" or nil}
     end,
+    atlas = "blinds",
+    pos = { x = 0, y = 0 },
     boss = {min = 1},
-    boss_colour = HEX("18574E"),
+    boss_colour = HEX("A6A6A6"),
     set_blind = function(self)
         MKTJK_dvd_stuff.x_pos = love.graphics.getWidth()/2
         MKTJK_dvd_stuff.y_pos = love.graphics.getHeight()/2
         MKTJK_dvd_stuff.in_dvd = true
         MKTJK_dvd_stuff.hit_corner = false
         MKTJK_dvd_stuff.angle = (math.random() + 0.5) * math.pi / 4
-        MKTJK_dvd_stuff.velocity_vector = {dx = 90 * math.cos(MKTJK_dvd_stuff.angle), dy = 90 * math.sin(MKTJK_dvd_stuff.angle)}
+        MKTJK_dvd_stuff.velocity_vector = {dx = 130 * math.cos(MKTJK_dvd_stuff.angle), dy = 130 * math.sin(MKTJK_dvd_stuff.angle)}
         G.E_MANAGER:add_event(Event({
             trigger = "immediate",
             func = function()
