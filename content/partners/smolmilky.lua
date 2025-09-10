@@ -15,12 +15,7 @@ Partner_API.Partner{
     
     link_config = {j_mktjk_milky = 1},
 
-    loc_vars = function(self, info_queue, card)
-        local link_level = self:get_link_level()
-        local benefits = 1
-        if link_level == 1 then benefits = 2 end
-        return { vars = {card.ability.extra.chips, card.ability.extra.chip_mod*benefits} }
-    end,
+    pronouns = "she_theyxhey",
 
     loc_txt = {
         ['name'] = "lil' milky",

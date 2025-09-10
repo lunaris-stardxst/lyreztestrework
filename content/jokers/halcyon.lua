@@ -21,6 +21,7 @@ SMODS.Joker{ -- Halcyon Sentipydes
         x = 1,
         y = 1
     },
+    pronouns = "they_them",
     cost = 7,
     rarity = 3,
     blueprint_compat = true,
@@ -29,6 +30,9 @@ SMODS.Joker{ -- Halcyon Sentipydes
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.repetition and context.cardarea == G.play  then

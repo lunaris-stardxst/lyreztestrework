@@ -28,6 +28,7 @@ SMODS.Joker{ --Corobo
         x = 6,
         y = 2
     },
+    pronouns = "she_her",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
@@ -36,6 +37,9 @@ SMODS.Joker{ --Corobo
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return { 

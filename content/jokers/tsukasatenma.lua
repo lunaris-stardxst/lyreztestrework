@@ -30,6 +30,7 @@ SMODS.Joker { -- {f:5}天馬 司
         info_queue[#info_queue + 1] = G.P_CENTERS.e_negative
         return {vars = {colours = {{0.31, 0.37, 0.63, 1}}}}
     end,
+    pronouns = "he_him",
     cost = 12,
     rarity = 4,
     blueprint_compat = true,
@@ -38,6 +39,9 @@ SMODS.Joker { -- {f:5}天馬 司
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main then

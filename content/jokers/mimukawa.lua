@@ -22,6 +22,7 @@ SMODS.Joker{ --Mimukawa Nice Try
         x = 4,
         y = 0
     },
+    pronouns = "she_her",
     cost = 6,
     rarity = 1,
     blueprint_compat = true,
@@ -30,6 +31,9 @@ SMODS.Joker{ --Mimukawa Nice Try
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then

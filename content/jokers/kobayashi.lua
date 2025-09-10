@@ -16,6 +16,7 @@ SMODS.Joker{ --Miss Kobayashi:
         x = 9,
         y = 0
     },
+    pronouns = "she_her",
     cost = 12,
     rarity = 3,
     blueprint_compat = true,
@@ -24,6 +25,9 @@ SMODS.Joker{ --Miss Kobayashi:
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     add_to_deck = function(self, card, from_debuff)
         G.E_MANAGER:add_event(Event({

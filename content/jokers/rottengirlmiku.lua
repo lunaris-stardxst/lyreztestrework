@@ -21,6 +21,7 @@ SMODS.Joker { -- Rotten Girl Miku
         x = 4,
         y = 2
     },
+    pronouns = "yaoi",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
@@ -29,6 +30,10 @@ SMODS.Joker { -- Rotten Girl Miku
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+
     in_pool = function(self, args)
         return
             (not args or args.source == 'sho' or args.source == 'buf' or args.source == 'jud' or args.source == 'rif' or

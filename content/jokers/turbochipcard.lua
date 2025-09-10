@@ -20,6 +20,7 @@ SMODS.Joker { -- TurboChip Card
         x = 3,
         y = 3
     },
+    pronouns = "it_its",
     cost = 13,
     rarity = 3,
     blueprint_compat = true,
@@ -28,6 +29,10 @@ SMODS.Joker { -- TurboChip Card
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+
     in_pool = function(self, args)
         return
             (not args or args.source ~= 'sho' or args.source == 'buf' or args.source == 'jud' or args.source == 'rif' or

@@ -20,6 +20,7 @@ SMODS.Joker{ --tbh creature
         x = 6,
         y = 3
     },
+    pronouns = "autism",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
@@ -28,6 +29,9 @@ SMODS.Joker{ --tbh creature
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue + 1] = G.P_CENTERS.e_negative

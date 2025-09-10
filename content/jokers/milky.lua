@@ -33,6 +33,7 @@ SMODS.Joker{ -- MiLKY-P
             card.children.floating_sprite:draw_shader('dissolve', nil, nil,nil,card.children.center,sc, rotate_mod,xm,ym,nil, 0.6)
         end
     end},
+    pronouns = "she_theyxhey",
     cost = 39,
     rarity = 4,
     blueprint_compat = true,

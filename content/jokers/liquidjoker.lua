@@ -16,6 +16,7 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
         x = 3,
         y = 0
     },
+    pronouns = "it_its",
     cost = 12,
     rarity = 2,
     blueprint_compat = true,
@@ -24,7 +25,10 @@ SMODS.Joker{ --MacOS 26 Tahoe Developer Beta 3
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
-
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+    
     loc_vars = function(self, info_queue, card)
         table.insert(info_queue, G.P_CENTERS.m_glass)
     end,

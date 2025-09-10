@@ -25,6 +25,7 @@ SMODS.Joker{ --Rentarou Aijou
         x = 6,
         y = 0
     },
+    pronouns = "he_him",
     cost = 35,
     rarity = 4,
     blueprint_compat = true,
@@ -33,6 +34,10 @@ SMODS.Joker{ --Rentarou Aijou
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+
     in_pool = function (self, args)
         return false
     end,

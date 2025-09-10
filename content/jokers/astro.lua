@@ -24,6 +24,7 @@ SMODS.Joker{ --Astro
         x = 9,
         y = 2
     },
+    pronouns = "he_him",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,
@@ -32,6 +33,9 @@ SMODS.Joker{ --Astro
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then

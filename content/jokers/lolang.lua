@@ -22,6 +22,7 @@ SMODS.Joker{ --lolang from librarby of runia
         x = 0,
         y = 3
     },
+    pronouns = "he_him",
     cost = 4,
     rarity = 3,
     blueprint_compat = true,
@@ -30,6 +31,9 @@ SMODS.Joker{ --lolang from librarby of runia
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then

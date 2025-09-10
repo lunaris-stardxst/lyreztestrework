@@ -23,6 +23,7 @@ SMODS.Joker{ --jokerno$
         x = 3,
         y = 1
     },
+    pronouns = "he_him",
     cost = 7,
     rarity = 2,
     blueprint_compat = true,
@@ -31,6 +32,9 @@ SMODS.Joker{ --jokerno$
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     set_ability = function(self, card, initial, delay_sprites)
       card:set_rental(true)

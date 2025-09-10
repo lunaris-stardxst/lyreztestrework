@@ -18,6 +18,7 @@ SMODS.Joker { -- The Comedian
         x = 8,
         y = 0
     },
+    pronouns = "it_its",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,
@@ -26,6 +27,10 @@ SMODS.Joker { -- The Comedian
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+
     in_pool = function() return G.GAME.pool_flags.cavendish_extinct end,
 
     loc_vars = function(self, info_queue, card)

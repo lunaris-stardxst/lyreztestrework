@@ -1,29 +1,25 @@
-SMODS.Joker{ --stellegoe :3
-    key = "stellegoe",
+SMODS.Joker{ --iFlash Quad
+    key = "iflashquad",
     config = {
         extra = {
-            chips = 3.9
         }
     },
     loc_txt = {
-        ['name'] = 'stellegoe :3',
+        ['name'] = 'iFlash Quad',
         ['text'] = {
-            [1] = '{C:chips}+#1#{} Chips'
+            [1] = '{C:attention}+4{} hand size.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
-    loc_vars = function(self, info_queue, card)
-        return { vars = { card.ability.extra.chips } }
-    end,
     pos = {
-        x = 1,
+        x = 9,
         y = 4
     },
     pronouns = "it_its",
-    cost = 4,
-    rarity = 1,
+    cost = 8,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -35,10 +31,13 @@ SMODS.Joker{ --stellegoe :3
     },
 
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
-                return {
-                    chips = card.ability.extra.chips
-                }
-        end
+    end,
+
+    add_to_deck = function(self, card, from_debuff)
+        G.hand:change_size(4)
+    end,
+
+    remove_from_deck = function(self, card, from_debuff)
+        G.hand:change_size(-4)
     end
 }

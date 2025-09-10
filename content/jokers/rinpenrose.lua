@@ -2,8 +2,8 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     key = "rinpenrose",
     config = {
         extra = {
-            slots = 3
-        }
+        },
+        card_limit = 3
     },
     loc_txt = {
         ['name'] = 'Rin Penrose And The Balatro Polycule',
@@ -15,6 +15,7 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
         x = 7,
         y = 0
     },
+    pronouns = "she_her",
     cost = 14,
     rarity = 4,
     blueprint_compat = true,
@@ -23,18 +24,4 @@ SMODS.Joker{ --Rin Penrose And The Balatro Polycule
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
-
-    loc_vars = function(self, queue, card)
-        return { 
-            vars = { card.ability.extra.slots } 
-        }
-    end,
-
-    add_to_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit + card.ability.extra.slots
-    end,
-
-    remove_from_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit - card.ability.extra.slots
-    end
 }

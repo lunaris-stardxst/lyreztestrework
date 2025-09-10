@@ -22,6 +22,7 @@ SMODS.Joker { -- Aikoyoris Bluetooth
         x = 4,
         y = 4
     },
+    pronouns = "it_its",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
@@ -30,6 +31,9 @@ SMODS.Joker { -- Aikoyoris Bluetooth
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue + 1] = G.P_CENTERS.e_negative

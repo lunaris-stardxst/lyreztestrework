@@ -20,6 +20,7 @@ SMODS.Joker{ --Minecraft Parkour
         x = 0,
         y = 0
     },
+    pronouns = "it_its",
     cost = 6,
     rarity = 3,
     blueprint_compat = true,
@@ -28,6 +29,9 @@ SMODS.Joker{ --Minecraft Parkour
     unlocked = true,
     discovered = true,
     atlas = 'mcparkour',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return { 

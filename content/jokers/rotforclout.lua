@@ -25,6 +25,7 @@ SMODS.Joker{ --ROT FOR CLOUT
         x = 7,
         y = 2
     },
+    pronouns = "she_her",
     cost = 12,
     rarity = 3,
     blueprint_compat = true,
@@ -33,7 +34,10 @@ SMODS.Joker{ --ROT FOR CLOUT
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
-
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+    
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.multforclout, card.ability.extra.decrementforclout}}
     end,

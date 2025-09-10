@@ -11,6 +11,7 @@ SMODS.Back{
             "{C:dark_edition,T:e_negative}Negative{} {C:attention,T:j_mktjk_astro}Astros",
         }
 	},
+	pronouns = "autism",
 	loc_vars = function(self,info_queue,card)
 		return {vars = {self.config.extra.winning_ante, colours = {{0.78, 0.35, 0.52, 1}}}}
 	end,

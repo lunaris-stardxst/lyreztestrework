@@ -20,6 +20,7 @@ SMODS.Joker{ --Aime Card
         x = 0,
         y = 2
     },
+    pronouns = "it_its",
     cost = 5,
     rarity = 2,
     blueprint_compat = true,
@@ -28,6 +29,9 @@ SMODS.Joker{ --Aime Card
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
 -- this is a temporary effect. i will replace this once i figure out how to implement it
 

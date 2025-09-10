@@ -23,6 +23,7 @@ SMODS.Joker{ --神代 類
         x = 8,
         y = 1
     },
+    pronouns = "he_they",
     cost = 12,
     rarity = 4,
     blueprint_compat = true,
@@ -31,6 +32,9 @@ SMODS.Joker{ --神代 類
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
 -- note to self. find a way to make the ruis stop mitosing. 
 -- it works for now but this will eventually crash the game.

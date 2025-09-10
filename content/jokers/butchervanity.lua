@@ -28,6 +28,7 @@ SMODS.Joker{ --Butcher Vanity
         x = 4,
         y = 3
     },
+    pronouns = "she_her",
     cost = 4,
     rarity = 4,
     blueprint_compat = true,
@@ -36,6 +37,9 @@ SMODS.Joker{ --Butcher Vanity
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         local new_numerator, new_denominator = SMODS.get_probability_vars(card, card.ability.extra.numera, card.ability.extra.denomina, 'j_mktjk_butchervanity') 

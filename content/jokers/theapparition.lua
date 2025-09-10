@@ -25,6 +25,7 @@ SMODS.Joker { -- The Apparition
         w = 71 * 1,
         h = 95 * 1
     },
+    pronouns = "she_her",
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
@@ -33,6 +34,9 @@ SMODS.Joker { -- The Apparition
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return {

@@ -21,6 +21,7 @@ SMODS.Joker{ --Aurith Autumne
         x = 0,
         y = 4
     },
+    pronouns = "she_they",
     cost = 7,
     rarity = 2,
     blueprint_compat = true,
@@ -29,6 +30,9 @@ SMODS.Joker{ --Aurith Autumne
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.autumnbux}}

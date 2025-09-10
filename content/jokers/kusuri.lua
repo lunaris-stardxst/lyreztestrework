@@ -23,6 +23,7 @@ SMODS.Joker{ --Yakuzen Kusuri
         x = 2,
         y = 3
     },
+    pronouns = "she_her",
     cost = 8,
     rarity = 2,
     blueprint_compat = true,
@@ -31,6 +32,9 @@ SMODS.Joker{ --Yakuzen Kusuri
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then

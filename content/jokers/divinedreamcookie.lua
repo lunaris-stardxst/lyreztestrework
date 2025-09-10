@@ -23,6 +23,7 @@ SMODS.Joker{ --Divine Dream Cookie
         x = 0,
         y = 1
     },
+    pronouns = "she_they",
     cost = 8,
     rarity = 3,
     blueprint_compat = true,
@@ -31,6 +32,9 @@ SMODS.Joker{ --Divine Dream Cookie
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.discard  then

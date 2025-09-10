@@ -21,6 +21,7 @@ SMODS.Joker{ --Shop Keeper Kagami
         x = 3,
         y = 2
     },
+    pronouns = "she_they",
     cost = 4,
     rarity = 1,
     blueprint_compat = true,
@@ -29,6 +30,10 @@ SMODS.Joker{ --Shop Keeper Kagami
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+
     in_pool = function(self, args)
           return (
           not args

@@ -20,6 +20,8 @@ SMODS.Joker {
             "card is scored"
         }
     },
+    pronouns = "they_them",
+
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play then
             if not context.blueprint and SMODS.has_enhancement(context.other_card, "m_steel") then

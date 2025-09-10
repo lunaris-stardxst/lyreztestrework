@@ -31,6 +31,7 @@ SMODS.Joker{ --Mr. Morale and the Big Steppers
         x = 9,
         y = 1
     },
+    pronouns = "he_him",
     cost = 6,
     rarity = 3,
     blueprint_compat = true,
@@ -39,6 +40,9 @@ SMODS.Joker{ --Mr. Morale and the Big Steppers
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 
     calculate = function(self, card, context)
         if context.discard then

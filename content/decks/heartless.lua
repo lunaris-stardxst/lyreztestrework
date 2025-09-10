@@ -10,6 +10,7 @@ SMODS.Back {
         }
 		},
 	config = {},
+    pronouns = "it_its",
     apply = function(self, back)
         G.E_MANAGER:add_event(Event({
             func = function()

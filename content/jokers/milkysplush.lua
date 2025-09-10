@@ -31,6 +31,7 @@ SMODS.Joker{ --Milkys Fuckass Plushie
             card.ability.extra.Xmult
         }
     } end,
+    pronouns = "she_theyxhey",
     cost = 20,
     rarity = 4,
     blueprint_compat = true,

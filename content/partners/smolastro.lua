@@ -13,6 +13,7 @@ Partner_API.Partner{
         }
     },
 
+    pronouns = "he_him",
 
     loc_txt = {
         ['name'] = 'smol astro',

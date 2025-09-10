@@ -19,6 +19,7 @@ SMODS.Joker{ --True Kobayashi
         x = 9,
         y = 0
     },
+    pronouns = "she_her",
     cost = 20,
     rarity = 4,
     blueprint_compat = true,
@@ -27,6 +28,10 @@ SMODS.Joker{ --True Kobayashi
     unlocked = true,
     discovered = true,
     atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
+
     in_pool = function(self, args)
           return (
           not args 

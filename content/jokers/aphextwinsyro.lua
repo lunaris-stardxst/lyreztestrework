@@ -18,6 +18,7 @@ SMODS.Joker{ -- s950tx16wasr10 (joker mix)
         x = 7,
         y = 1
     },
+    pronouns = "it_its",
     cost = 12,
     rarity = next(SMODS.find_mod("cryptposting")) and "crp_trash" or 3,
     blueprint_compat = true,
@@ -25,5 +26,8 @@ SMODS.Joker{ -- s950tx16wasr10 (joker mix)
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'jokers'
+    atlas = 'jokers',
+    pools = { 
+        ["milkys_jokers"] = true 
+    },
 }

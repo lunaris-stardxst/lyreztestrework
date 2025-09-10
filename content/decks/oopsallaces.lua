@@ -9,6 +9,7 @@ SMODS.Back {
         }
     },
     config = {aces = 'Ace'},
+    pronouns = "they_them",
 
     apply = function(self)
         G.E_MANAGER:add_event(Event({
