@@ -1,5 +1,19 @@
 return {
   descriptions = {
+    Blind = {
+        bl_mktjk_dvd = {
+            name = "The DVD",
+            text = {
+                "Win when the",
+                "DVD logo hits",
+                "the corner"
+            }
+        },
+        bl_mktjk_dvd_alt = {
+            name = "The DVD",
+            text = {"Win when the DVD logo hits the corner"}
+        }
+    },
       Other = {
         mktjk_kohaku_name={
                 name="Joker Name",
