@@ -71,6 +71,9 @@ local dt_table = {
     {"j_mktjk_mcparkour",0.06,19,4},
 }
 
+mktjk = {}
+mktjk.path = ""..SMODS.current_mod.path
+
 --[[To use this:
 
 1. Familarize yourself with dt_table:
