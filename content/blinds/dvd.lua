@@ -28,7 +28,7 @@ MKTJK_dvd_stuff.velocity_vector = {dx = 0, dy = 0}
 SMODS.Blind {
     key = "dvd",
     loc_vars = function(self)
-        return {key = next(SMODS.find_mod("Yahimod") and "bl_mktjk_dvd_alt" or nil)}
+        return {key = next(SMODS.find_mod("Yahimod")) and "bl_mktjk_dvd_alt" or nil}
     end,
     boss = {min = 1},
     boss_colour = HEX("18574E"),
