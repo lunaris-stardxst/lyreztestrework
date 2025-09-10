@@ -43,7 +43,7 @@ SMODS.Blind {
         MKTJK_dvd_stuff.in_dvd = true
         MKTJK_dvd_stuff.hit_corner = false
         MKTJK_dvd_stuff.angle = (math.random() + 0.5) * math.pi / 4
-        MKTJK_dvd_stuff.velocity_vector = {dx = 80 * math.cos(MKTJK_dvd_stuff.angle), dy = 80 * math.sin(MKTJK_dvd_stuff.angle)}
+        MKTJK_dvd_stuff.velocity_vector = {dx = 90 * math.cos(MKTJK_dvd_stuff.angle), dy = 90 * math.sin(MKTJK_dvd_stuff.angle)}
         G.E_MANAGER:add_event(Event({
             trigger = "immediate",
             func = function()
@@ -76,10 +76,10 @@ function love.draw()
             MKTJK_dvd_stuff.y_pos = MKTJK_dvd_stuff.y_pos > 788.5 and 788.5 or 75.5
             MKTJK_dvd_stuff.curr_color = {math.random(), math.random(), math.random(), 1}
         end
-        if (MKTJK_dvd_stuff.x_pos < 10 and MKTJK_dvd_stuff.y_pos < 10) or
-            (MKTJK_dvd_stuff.x_pos < 10 and MKTJK_dvd_stuff.y_pos > 778.5) or
-            (MKTJK_dvd_stuff.x_pos > 1360 and MKTJK_dvd_stuff.y_pos < 10) or
-            (MKTJK_dvd_stuff.x_pos > 1360 and MKTJK_dvd_stuff.y_pos > 778.5) then
+        if (MKTJK_dvd_stuff.x_pos < 15 and MKTJK_dvd_stuff.y_pos < 15) or
+            (MKTJK_dvd_stuff.x_pos < 15 and MKTJK_dvd_stuff.y_pos > 773.5) or
+            (MKTJK_dvd_stuff.x_pos > 1355 and MKTJK_dvd_stuff.y_pos < 15) or
+            (MKTJK_dvd_stuff.x_pos > 1355 and MKTJK_dvd_stuff.y_pos > 773.5) then
                 MKTJK_dvd_stuff.hit_corner = true
                 MKTJK_dvd_stuff.in_dvd = false
                 G.E_MANAGER:add_event(Event({
