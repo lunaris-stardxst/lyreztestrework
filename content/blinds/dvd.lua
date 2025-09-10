@@ -13,7 +13,7 @@ SMODS.Sound {
 
 MKTJK_dvd_stuff = {}
 
-local DVD_icon_file = assert(NFS.newFileData(mod_path .. "assets/misc/DVD_icon.png"))
+local DVD_icon_file = assert(NFS.newFileData("assets/misc/DVD_icon.png"))
 local DVD_icon_data = assert(love.image.newImageData(DVD_icon_file))
 MKTJK_dvd_stuff.DVD_ICON_SPRITE = assert(love.graphics.newImage(DVD_icon_data))
 
