@@ -403,6 +403,7 @@ load_boosters_folder()
 load_crossmod_folder()
 
 assert(SMODS.load_file("titlescreen.lua"))()
+assert(SMODS.load_file("ui.lua"))()
 
 -- i dont know why this is in main.lua but it doesnt work any other way
 
