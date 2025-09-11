@@ -86,7 +86,8 @@ return {
                 name = "Milky's Bullshit",
                 text = {
                     "real fucked up additions. special thanks to:",
-                    "meta, thunderedge, and the balatro modding community <3.",
+                    "metanite64, thunderedge, comykel, gappie, glitchkat, aiko", 
+                    "and the balatro modding community <3.",
                     "visit https://milkyway.moe pls :3"
                 }
             }
