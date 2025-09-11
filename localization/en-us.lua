@@ -15,6 +15,24 @@ return {
             }
         },
         Other = {
+            mktjk_credits = {
+                name = "",
+                text = {
+                    "{C:dark_edition,E:1,s:3}- credits -",
+                    '{X:purple,C:white,s:1.3}Lead{} {X:purple,C:white}Programmers:{} {C:purple}lumiii, ThunderEdge, metanite64',
+                    '{X:blue,C:white,s:1.3}Supporting{} {X:blue,C:white}Programmers:{} {C:blue}TheCoroboCorner, Rainstar',
+                    '{X:attention,C:white,s:1.3}Lead{} {X:attention,C:white}Artist:{} {C:attention}lumiii',
+                    '{X:green,C:white,s:1.3}Supporting{} {X:green,C:white}Artists:{} {C:green}comykel, Gappie, Astro, Pumpkin Man, Auzzy',
+                    '{X:planet,C:white,s:1.3}Contributors:{} {C:planet}Aikoyori, Ruby, Shinku, Sage, TheOneGoofAli, Haya,',
+                    '{C:planet}Astra, Lyre, Paya, The Shiver System and Lily',
+                    '{X:red,C:white,s:1.3}Localization{} {X:red,C:white}and{} {X:red,C:white}Rebalancing:{} {C:red}Glitchkat10',
+                    '{X:gold,C:white,s:1.3}Special{} {X:gold,C:white}Thanks:{} {C:gold}All the people in the Balatro Discord!{}',
+                    '{C:white,s:1}You all helped make this project possible. Thank you guys for everything!',
+                    '  ',
+                    '{C:red,s:3}Except you, UnusedParadox. Just stop.{}',
+                    '{C:white,s:1}And AutumnMood, who opted out of being thanked.',
+                }
+            },
             mktjk_kohaku_name = {
                 name = "Joker Name",
                 text = {
@@ -85,9 +103,8 @@ return {
             milkysbullshit = {
                 name = "Milky's Bullshit",
                 text = {
-                    "real fucked up additions. special thanks to:",
-                    "metanite64, thunderedge, comykel, gappie, glitchkat, aiko", 
-                    "and the balatro modding community <3.",
+                    "real fucked up additions.",
+                    "look in credits tab for credits", 
                     "visit https://milkyway.moe pls :3"
                 }
             }
@@ -96,7 +113,8 @@ return {
     misc = {
         dictionary = {
             k_saved_rentarou = "Rentarou has defied death itself with the power of love.",
-            b_mktjk_website = "https://milkyway.moe"
+            b_mktjk_website = "https://milkyway.moe",
+            b_mktjk_credits = "Credits",
         },
     }
 }

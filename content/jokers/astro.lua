@@ -6,12 +6,16 @@ SMODS.Joker{ --Astro
             echips = 2
         }
     },
+    loc_vars = function(self, info_queue, card)
+        return {vars = {card.ability.extra.echips, card.ability.extra.chipsadd}}
+    end,
+
     loc_txt = {
         ['name'] = 'Astro',
         ['text'] = {
             'Played cards give {C:chips}+#1#{}',
             'Chips when scored,',
-            'increases by {C:attention}1{}',
+            'increases by {C:attention}+#2#{}',
             'at end of round',
             '{C:attention}Meows{} when you do',
             'almost anything'

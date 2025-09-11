@@ -6,10 +6,6 @@ SMODS.Joker {
     rarity = 4,
     cost = 20,
     blueprint_compat = true,
-    loc_vars = function(self, info_queue, card)
-        table.insert(info_queue, G.P_CENTERS.m_steel)
-        return {vars = {card.ability.extra.xmult, card.ability.extra.xmult_gain}}
-    end,
     loc_txt = {
         name = "Stelle Steelbrooke",
         text = {
@@ -22,6 +18,7 @@ SMODS.Joker {
     },
     loc_vars = function (self, queue, card)
         queue[#queue+1] = {key = 'mktjk_credit_astro', set = 'Other'}
+        return {vars = {card.ability.extra.xmult, card.ability.extra.xmult_gain}}
     end,
     pronouns = "they_them",
 
