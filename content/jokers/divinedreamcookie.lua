@@ -37,26 +37,16 @@ SMODS.Joker{ --Divine Dream Cookie
     },
 
     calculate = function(self, card, context)
-        if context.discard  then
-            if (function()
-    local rankFound = false
-    for i, c in ipairs(context.full_hand) do
-        if c:get_id() == 12 then
-            rankFound = true
-            break
+        if context.discard and not context.blueprint and
+            not context.other_card.debuff and
+            context.other_card:get_id() == 12 then
+            card.ability.extra.xmultvar = card.ability.extra.xmultvar + 0.5
+            return {
+                message = localize { type = 'variable', key = 'a_xmult', vars = { card.ability.extra.xmultvar } },
+                colour = G.C.RED
+            }
         end
-    end
-    
-    return rankFound
-end)() then
-                return {
-                    func = function()
-                    card.ability.extra.xmultvar = (card.ability.extra.xmultvar) + 0.5
-                    return true
-                end
-                }
-            end
-        end
+
         if context.cardarea == G.jokers and context.joker_main  then
                 return {
                     Xmult = card.ability.extra.xmultvar
