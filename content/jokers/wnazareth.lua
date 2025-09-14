@@ -41,7 +41,7 @@ SMODS.Joker{ -- Waters Of Nazareth
         if context.individual and context.cardarea == G.hand and not context.end_of_round  then
             if context.other_card:is_suit("Clubs") then
                 return {
-                    mult = ((function() local count = 0; for _, card in ipairs(G.playing_cards or {}) do if card.base.suit == 'Clubs' then count = count + 1 end end; return count end)()) * 2
+                    mult = ((function() local count = 0; for _, card in ipairs(G.playing_cards or {}) do if card.base.suit == 'Clubs' then count = count + 1 end end; return count end)()) * card.config.extra.multiplier
                 }
             end
         end
