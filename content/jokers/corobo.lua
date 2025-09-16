@@ -1,9 +1,17 @@
 local function gcd(a, b) -- expects a and b to be Bigs
     local t
-    while not b:eq(to_big(0)) do
-        t = b
-        b = a:mod(b)
-        a = t
+    if next(SMODS.find_mod("Talisman")) then
+        while not b:eq(to_big(0)) do
+            t = b
+            b = a:mod(b)
+            a = t
+        end
+    else
+        while b ~= 0 do
+            t = b
+            b = math.fmod(a, b)
+            a = t
+        end
     end
     return a
 end

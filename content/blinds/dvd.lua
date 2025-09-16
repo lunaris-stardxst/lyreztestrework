@@ -32,7 +32,7 @@ SMODS.Blind {
     end,
     atlas = "blinds",
     pos = { x = 0, y = 0 },
-    boss = {min = 1},
+    boss = { min = 1 },
     boss_colour = HEX("A6A6A6"),
     set_blind = function(self)
         G.E_MANAGER:add_event(Event({
