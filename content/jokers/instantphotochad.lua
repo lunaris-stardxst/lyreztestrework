@@ -17,7 +17,7 @@ SMODS.Joker{ --Instant Photochad
         }
     },
     pos = {
-        x = 0,
+        x = 1,
         y = 5
     },
     display_size = {
@@ -32,12 +32,22 @@ SMODS.Joker{ --Instant Photochad
     perishable_compat = true,
     unlocked = true,
     discovered = true,
+    soul_pos = {x = 0, y = 5},
     atlas = 'jokers',
     pools = { 
         ["milkys_jokers"] = true 
     },
+    draw = function (self, card, layer)
+        if card.children.center then
+            rotate_mod = math.sin(G.TIMERS.REAL * 1.9) * 0.01
+            local sc = -0.1
+            local xm = 0
+            local ym = (-0.02 * (math.sin(G.TIMERS.REAL)/2)) - G.CARD_H + 0.6
+            card.children.center:draw_shader('dissolve', 0, nil,true,card.children.center,sc, rotate_mod,xm,ym+0.2,nil, 0.6)
+            card.children.center:draw_shader('dissolve', nil, nil,true,card.children.center,sc, rotate_mod,xm,ym,nil, 0.6)
+        end
 
-
+    end,
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.xtwomult}}
     end,

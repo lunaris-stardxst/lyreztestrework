@@ -35,7 +35,7 @@ SMODS.Joker{ --Eru Futate
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
-            if context.scoring_name == "Pair" then
+            if next(context.poker_hands["Pair"]) then
                 return {
                     Xmult = card.ability.extra.Xmult
                 }
