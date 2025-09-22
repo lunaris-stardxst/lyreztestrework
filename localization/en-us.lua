@@ -24,7 +24,7 @@ return {
                     '{X:attention,C:white,s:1.3}Lead{} {X:attention,C:white}Artist:{} {C:attention}lumiii',
                     '{X:green,C:white,s:1.3}Supporting{} {X:green,C:white}Artists:{} {C:green}comykel, Gappie, Astro, Pumpkin Man, Auzzy',
                     '{X:planet,C:white,s:1.3}Contributors:{} {C:planet}Aikoyori, Ruby, Shinku, TheOneGoofAli, Haya,',
-                    '{C:planet}Astra, Lyre, Paya, The Shiver System and Lily',
+                    '{C:planet}Astra, Lyre, Paya, candycane, MaxBoi, The Shiver System and Lily',
                     '{X:red,C:white,s:1.3}Localization{} {X:red,C:white}and{} {X:red,C:white}Rebalancing:{} {C:red}Glitchkat10',
                     '{X:gold,C:white,s:1.3}Special{} {X:gold,C:white}Thanks:{} {C:gold}All the people in the Balatro Discord!{}',
                     '{C:white,s:1}You all helped make this project possible. Thank you guys for everything!',

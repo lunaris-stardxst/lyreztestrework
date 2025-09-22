@@ -24,6 +24,7 @@ SMODS.Joker{ --Fluo Rescen
         w = 71 * 0.7, 
         h = 95 * 0.7
     },
+    pronouns = "they_them",
     cost = 3,
     rarity = 1,
     blueprint_compat = true,
