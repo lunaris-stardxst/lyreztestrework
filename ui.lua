@@ -144,3 +144,36 @@ SMODS.current_mod.extra_tabs = function()
         }
     }
 end
+mktjk.config = SMODS.current_mod.config
+SMODS.current_mod.config_tab = function()
+    return {
+        n = G.UIT.ROOT,
+        config = {
+            emboss = 0.05,
+            r = 0.1,
+            padding = 0.1,
+            colour = G.C.BLACK
+        },
+        nodes = {
+            {
+                n = G.UIT.C,
+                config = {
+                    align = "cm"
+                },
+                nodes = {
+                    {
+                        n = G.UIT.R,
+                        config = { align = "cr" },
+                        nodes = {
+                            create_toggle({
+                                label = "Disable Main Menu Logo",
+                                ref_table = mktjk.config,
+                                ref_value = "menu_logo",
+                            })
+                        }
+                    }
+                }
+            }
+        }
+    }
+end
