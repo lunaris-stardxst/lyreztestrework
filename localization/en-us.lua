@@ -116,6 +116,7 @@ return {
             k_saved_rentarou = "Rentarou has defied death itself with the power of love.",
             b_mktjk_website = "https://milkyway.moe",
             b_mktjk_credits = "Credits",
+            milkysboosters = "Milky Pack"
         },
     }
 }
