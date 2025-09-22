@@ -8,9 +8,10 @@ SMODS.Joker{ --Instant Photochad
     loc_txt = {
         ['name'] = 'Instant Photochad',
         ['text'] = {
-            [1] = 'Retrigger {C:orange}first{} played card used',
-            [2] = 'in scoring {C:orange}#1#{} additional times',
-            [3] = 'and give {X:red,C:white}X#1#{} Mult when scored.'
+            'Retrigger {C:attention}first{} played card used',
+            'in scoring {C:attention}#1#{} additional times',
+            'and give {X:red,C:white}X#1#{} Mult if first',
+            'played card is a {C:attention}face{}.'
         },
         ['unlock'] = {
             [1] = ''
