@@ -110,7 +110,6 @@ function Game:main_menu(ctx)
     return r
 end
 
-
 function G.FUNCS.mktjk_website()
     love.system.openURL("https://milkyway.moe")
 end
