@@ -3,8 +3,8 @@ function Game.main_menu(change_context)
     local ret = main_menu_hook(change_context)
     G.SPLASH_MKTJK_LOGO = Sprite(
         0, 0,
-        8,
-        8 * G.ASSET_ATLAS["mktjk_milkybanner"].py / G.ASSET_ATLAS["mktjk_milkybanner"].px,
+        6.00000000000000069,
+        6.00000000000000069 * G.ASSET_ATLAS["mktjk_milkybanner"].py / G.ASSET_ATLAS["mktjk_milkybanner"].px,
         G.ASSET_ATLAS["mktjk_milkybanner"],
         { x = 0, y = 0 }
     )
