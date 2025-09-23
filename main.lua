@@ -424,3 +424,11 @@ function SMODS.shatters(card)
   if card.config.center.key == 'j_mktjk_donttapthejoker' then return true end
   return shatterref(card)
 end
+
+-- date calc
+function sinceday(year, month, day)
+    local now = os.date("*t")
+    local then_time = os.time({ year = year, month = month, day = day, hour = 0 })
+    local diff = os.difftime(os.time(now), then_time)
+    return math.floor(diff / (60 * 60 * 24))
+end

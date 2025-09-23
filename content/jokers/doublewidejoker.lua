@@ -28,6 +28,7 @@ SMODS.Joker{ --Double Wide Joker
         w = 35 * 2.12, 
         h = 95 * 1
     },
+    pronouns = he_him,
     cost = 7,
     rarity = 3,
     blueprint_compat = true,
