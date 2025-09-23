@@ -288,7 +288,13 @@ SMODS.Sound({
 SMODS.ObjectType {
     key = "milkys_jokers",
     default = "j_mktjk_milky",
-    cards = {}
+    cards = {},
+    rarities = {
+      { key = "Common", rate = 0.7 },
+      { key = "Uncommon", rate = 0.25 },
+      { key = "Rare", rate = 0.05 },
+      { key = "Legendary", rate = 0 }
+    }
 }
 
 local NFS = require("nativefs")
