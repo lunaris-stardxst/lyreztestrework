@@ -22,7 +22,7 @@ SMODS.Joker{ --sappy
         x = 6,
         y = 5
     },
-    pronouns = he_him,
+    pronouns = "he_him",
     cost = 6,
     rarity = 3,
     blueprint_compat = true,

@@ -24,7 +24,7 @@ SMODS.Joker{ --Azazal
         x = 8,
         y = 5
     },
-    pronouns = she_her,
+    pronouns = "she_her",
     cost = 39,
     rarity = 4,
     blueprint_compat = true,
