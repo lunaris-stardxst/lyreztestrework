@@ -3,7 +3,7 @@ SMODS.Joker {
     atlas = "jokers", -- add atlas here
     pos = {x = 5, y = 3}, -- fix pos
     config = {extra = {xmult = 2, xmult_gain = 0.5}},
-    rarity = 4,
+    rarity = "mktjk_meta",
     cost = 20,
     blueprint_compat = true,
     loc_txt = {

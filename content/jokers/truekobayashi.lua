@@ -21,7 +21,7 @@ SMODS.Joker{ --True Kobayashi
     },
     pronouns = "she_her",
     cost = 20,
-    rarity = 4,
+    rarity = 'mktjk_epic',
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

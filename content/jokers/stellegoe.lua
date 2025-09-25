@@ -21,7 +21,7 @@ SMODS.Joker{ --stellegoe :3
         x = 1,
         y = 4
     },
-    pronouns = "it_its",
+    pronouns = next(SMODS.find_mod("cryptposting")) and "bulgoe" or 'they_them',
     cost = 4,
     rarity = 1,
     blueprint_compat = true,

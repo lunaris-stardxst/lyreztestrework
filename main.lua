@@ -315,6 +315,11 @@ local function load_jokers_folder()
     end
 end
 
+local function load_rarities_file()
+    local mod_path = SMODS.current_mod.path
+    assert(SMODS.load_file("rarities.lua"))()
+end
+
 local function load_vouchers_folder()
     local mod_path = SMODS.current_mod.path
     local vouchers_path = mod_path .. "/content/vouchers"
@@ -400,6 +405,7 @@ local function load_crossmod_folder()
 end
 
 load_jokers_folder()
+load_rarities_file()
 load_vouchers_folder()
 load_decks_folder()
 load_seals_folder()
