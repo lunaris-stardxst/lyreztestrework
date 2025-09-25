@@ -9,7 +9,7 @@ SMODS.Joker { -- The Comedian
     loc_txt = {
         ['name'] = 'The Comedian',
         ['text'] = {
-            '{C:white,X:mult}X10{} Mult',
+            '{C:white,X:mult}X#1#{} Mult',
             '{C:green}#1# in #2#{} chance this card is',
             'destroyed at the end of round'
         }
