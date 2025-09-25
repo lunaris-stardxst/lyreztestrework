@@ -20,7 +20,7 @@ SMODS.Joker{ -- s950tx16wasr10 (joker mix)
     },
     pronouns = "it_its",
     cost = 12,
-    rarity = next(SMODS.find_mod("cryptposting")) and "crp_trash" or 1,
+    rarity = "mktjk_jimmy",
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
